@@ -1,0 +1,10 @@
+CRITICAL - 2021-08-08 14:02:52 --> Undefined variable: totalTime
+#0 C:\xampp745\htdocs\dpboss\system\Debug\Toolbar\Views\toolbar.tpl.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 41, Array)
+#1 C:\xampp745\htdocs\dpboss\system\Debug\Toolbar.php(456): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\dpboss\system\Debug\Toolbar.php(413): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 C:\xampp745\htdocs\dpboss\app\Config\Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 C:\xampp745\htdocs\dpboss\system\Events\Events.php(166): call_user_func(Object(Closure))
+#6 C:\xampp745\htdocs\dpboss\system\CodeIgniter.php(314): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp745\htdocs\dpboss\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,113 @@
+CRITICAL - 2021-06-03 14:03:55 --> Object of class DateTime could not be converted to string
+#0 C:\xampp745\htdocs\powernum\system\View\View.php(220): include()
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/das...', Array, true)
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/das...', Array)
+#4 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(55): master_admin_view('masteradmin/das...', Array)
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-03 14:05:06 --> syntax error, unexpected 'if' (T_IF), expecting ';' or ','
+#0 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/das...', Array, true)
+#2 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/das...', Array)
+#3 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(55): master_admin_view('masteradmin/das...', Array)
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-03 14:05:16 --> strtotime() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strtotime() exp...', 'C:\\xampp745\\htd...', 120, Array)
+#1 C:\xampp745\htdocs\powernum\app\Views\masteradmin\dashboard.php(120): strtotime(Object(DateTime))
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#3 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/das...', Array, true)
+#5 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/das...', Array)
+#6 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(55): master_admin_view('masteradmin/das...', Array)
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#9 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-06-03 14:06:49 --> Object of class DateTime could not be converted to string
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\dashboard.php(120): date_formate(Object(DateTime))
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/das...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/das...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(55): master_admin_view('masteradmin/das...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-03 14:26:32 --> Class 'App\Models\Madmin\Winner_m' not found
+#0 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(908): App\Controllers\Common_c->__construct()
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-03 14:26:46 --> Undefined property: stdClass::$price
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp745\\htd...', 63, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->winner_list_ajax()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-03 14:42:54 --> Too few arguments to function App\Models\Madmin\Winner_m::get_datatables(), 0 passed in C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php on line 54 and exactly 1 expected
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(54): App\Models\Madmin\Winner_m->get_datatables()
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->winner_list_ajax()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-03 14:59:36 --> Too few arguments to function App\Models\Madmin\Winner_m::get_datatables(), 0 passed in C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php on line 54 and exactly 1 expected
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(54): App\Models\Madmin\Winner_m->get_datatables()
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->winner_list_ajax()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-03 15:36:50 --> Too few arguments to function App\Models\Madmin\Ticket_m::get_powerno_by_ticket(), 0 passed in C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php on line 50 and exactly 1 expected
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(50): App\Models\Madmin\Ticket_m->get_powerno_by_ticket()
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->winner_list('1')
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-03 15:39:44 --> Illegal string offset 'num_1'
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\winner_list.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp745\\htd...', 19, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/win...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/win...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(52): master_admin_view('masteradmin/win...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->winner_list('1')
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-03 15:41:53 --> Undefined variable: pnrow
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\winner_list.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 17, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/win...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/win...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(52): master_admin_view('masteradmin/win...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->winner_list('1')
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-03 15:44:25 --> Undefined offset: 3
+#0 C:\xampp745\htdocs\powernum\app\Models\Madmin\Winner_m.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp745\\htd...', 61, Array)
+#1 C:\xampp745\htdocs\powernum\app\Models\Madmin\Winner_m.php(83): App\Models\Madmin\Winner_m->_get_datatables_query(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(55): App\Models\Madmin\Winner_m->get_datatables('1')
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->winner_list_ajax()
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#7 {main}

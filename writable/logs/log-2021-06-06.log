@@ -1,0 +1,83 @@
+CRITICAL - 2021-06-06 09:23:19 --> syntax error, unexpected '$list' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp745\htdocs\powernum\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp745\\htd...')
+#1 C:\xampp745\htdocs\powernum\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-06 09:40:45 --> Undefined variable: ticket_type_id
+#0 C:\xampp745\htdocs\powernum\app\Models\Madmin\Winner_m.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 142, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(104): App\Models\Madmin\Winner_m->chek_exist_pay('3', '3', '1', 1)
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->winner_list_ajax()
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-06 09:40:51 --> Undefined variable: ticket_type_id
+#0 C:\xampp745\htdocs\powernum\app\Models\Madmin\Winner_m.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 142, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(104): App\Models\Madmin\Winner_m->chek_exist_pay('3', '3', '1', 1)
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->winner_list_ajax()
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-06 10:08:24 --> The action you requested is not allowed.
+#0 C:\xampp745\htdocs\powernum\system\Security\Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp745\htdocs\powernum\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp745\htdocs\powernum\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('pay-user', 'before')
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-06 10:08:32 --> The action you requested is not allowed.
+#0 C:\xampp745\htdocs\powernum\system\Security\Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp745\htdocs\powernum\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp745\htdocs\powernum\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('pay-user', 'before')
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-06 10:08:57 --> Undefined variable: params
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 53, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->pay_user()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-06 10:30:44 --> Use of undefined constant MASTER_ADMIN_ADD_WITHDRAW_REQUEST_AGENT_TITLE - assumed 'MASTER_ADMIN_ADD_WITHDRAW_REQUEST_AGENT_TITLE' (this will throw an Error in a future version of PHP)
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Admin_c.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp745\\htd...', 54, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Admin_c->withdraw_req()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-06 10:34:22 --> Use of undefined constant MASTER_ADMIN_ADD_WITHDRAW_REQUEST_AGENT_TITLE - assumed 'MASTER_ADMIN_ADD_WITHDRAW_REQUEST_AGENT_TITLE' (this will throw an Error in a future version of PHP)
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Admin_c.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp745\\htd...', 54, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Admin_c->withdraw_req()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-06 10:36:33 --> Use of undefined constant MASTER_ADMIN_ADD_WITHDRAW_REQUEST_AGENT_TITLE - assumed 'MASTER_ADMIN_ADD_WITHDRAW_REQUEST_AGENT_TITLE' (this will throw an Error in a future version of PHP)
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Admin_c.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp745\\htd...', 54, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Admin_c->withdraw_req()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-06 10:41:04 --> Use of undefined constant MASTER_ADMIN_WITHDRAW_REQUEST_AGENT_USER_LIST_AJAX_LINK - assumed 'MASTER_ADMIN_WITHDRAW_REQUEST_AGENT_USER_LIST_AJAX_LINK' (this will throw an Error in a future version of PHP)
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\withdraw_history_js.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp745\\htd...', 64, Array)
+#1 C:\xampp745\htdocs\powernum\app\Views\masteradmin\common\footer.php(202): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#3 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/com...', Array, true)
+#5 C:\xampp745\htdocs\powernum\system\Common.php(1251): view('masteradmin/com...', Array)
+#6 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(60): master_admin_view('masteradmin/wit...', Array)
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->withdraw_req()
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#9 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#11 {main}

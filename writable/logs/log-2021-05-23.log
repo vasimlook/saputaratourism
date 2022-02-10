@@ -1,0 +1,394 @@
+CRITICAL - 2021-05-23 12:50:59 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'C:\\xampp745\\htd...', 46, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(46): date_format('2021-05-01', 'dd-M-Y')
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-23 12:51:18 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'C:\\xampp745\\htd...', 46, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(46): date_format('2021-05-01', 'dd-M-Y')
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-23 12:51:27 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'C:\\xampp745\\htd...', 46, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(46): date_format('2021-05-01', 'dd-M-Y')
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-23 12:52:01 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'C:\\xampp745\\htd...', 49, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(49): date_format('2021-05-01', 'dd-M-Y')
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-23 12:52:11 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'C:\\xampp745\\htd...', 49, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(49): date_format('2021-05-01', 'dd-M-Y')
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-23 12:52:22 --> date() expects parameter 2 to be int, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date() expects ...', 'C:\\xampp745\\htd...', 49, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(49): date('2021-05-01', 'dd-M-Y')
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-23 12:52:54 --> date() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date() expects ...', 'C:\\xampp745\\htd...', 49, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(49): date(Object(DateTime), 'dd-M-Y')
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-23 14:36:02 --> Undefined index: user_type
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\common\topnavigation.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 30, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/com...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1249): view('masteradmin/com...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Ticket_cm.php(47): master_admin_view('masteradmin/add...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticket_cm->add_ticket()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket_cm))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 14:47:40 --> Class 'date' not found
+#0 C:\xampp745\htdocs\powernum\system\View\View.php(220): include()
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/com...', Array, true)
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1251): view('masteradmin/com...', Array)
+#4 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(21): master_admin_view('masteradmin/das...', Array)
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 16:53:16 --> Class 'App\Controllers\User_m' not found
+#0 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(908): App\Controllers\Masteradmin_c->__construct()
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-23 16:54:14 --> Class 'App\Controllers\User_m' not found
+#0 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(908): App\Controllers\Masteradmin_c->__construct()
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-23 16:54:15 --> Class 'App\Controllers\User_m' not found
+#0 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(908): App\Controllers\Masteradmin_c->__construct()
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-23 17:05:00 --> Cannot use object of type stdClass as array
+#0 C:\xampp745\htdocs\powernum\system\View\View.php(220): include()
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/das...', Array, true)
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/das...', Array)
+#4 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(28): master_admin_view('masteradmin/das...', Array)
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 17:05:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArrayResult()
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(24): App\Models\Madmin\User_m->get_user_tickets('3')
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-23 18:40:07 --> Undefined variable: params
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 39, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->add_ticket()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-23 18:40:20 --> Undefined index: ticket_type_id
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\addticket.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 31, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/add...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/add...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Common_c.php(41): master_admin_view('masteradmin/add...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Common_c->add_ticket()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 19:36:13 --> Use of undefined constant MASTER_ADMIN_USER_LINK - assumed 'MASTER_ADMIN_USER_LINK' (this will throw an Error in a future version of PHP)
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\common\sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp745\\htd...', 47, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/com...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1248): view('masteradmin/com...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(27): master_admin_view('masteradmin/das...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 20:59:46 --> Trying to get property 'firstname' of non-object
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp745\\htd...', 34, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-23 21:00:42 --> Trying to get property 'firstname' of non-object
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp745\\htd...', 34, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-05-23 21:03:10 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `admin_i...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `admin_i...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `admin_i...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `admin_i...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 21:03:10 --> Unknown column 'name' in 'field list'
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `admin_i...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `admin_i...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `admin_i...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `admin_i...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-05-23 21:03:34 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `admin_i...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `admin_i...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `admin_i...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `admin_i...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 21:03:34 --> Unknown column 'name' in 'field list'
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `admin_i...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `admin_i...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `admin_i...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `admin_i...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-05-23 21:03:54 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `admin_i...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `admin_i...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `admin_i...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `admin_i...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 21:03:54 --> Unknown column 'name' in 'field list'
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `admin_i...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `admin_i...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `admin_i...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `admin_i...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-05-23 21:04:08 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `admin_i...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `admin_i...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `admin_i...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `admin_i...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 21:04:08 --> Unknown column 'name' in 'field list'
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `admin_i...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `admin_i...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `admin_i...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `admin_i...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 21:05:47 --> Undefined index: firstname
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 35, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-23 21:10:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-23 21:10:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Agent_c.php(25): App\Models\Madmin\Agent_m->get_datatables()
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agent_c->user_list()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-05-23 21:19:35 --> mysqli_sql_exception: Unknown column 'name' in 'order clause' in C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Ticketlist_m.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(23): App\Models\Madmin\Ticketlist_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 21:19:35 --> Unknown column 'name' in 'order clause'
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Ticketlist_m.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(23): App\Models\Madmin\Ticketlist_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-05-23 21:19:45 --> mysqli_sql_exception: Unknown column 'name' in 'order clause' in C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Ticketlist_m.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(23): App\Models\Madmin\Ticketlist_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 21:19:45 --> Unknown column 'name' in 'order clause'
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp745\htdocs\powernum\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp745\htdocs\powernum\app\Models\Madmin\Ticketlist_m.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Ticketlist_cm.php(23): App\Models\Madmin\Ticketlist_m->get_datatables()
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Ticketlist_cm->ajax_list()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketlist_cm))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 21:29:59 --> Undefined index: admin_id
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\common\sidebar.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 29, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/com...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1248): view('masteradmin/com...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(27): master_admin_view('masteradmin/das...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 21:31:01 --> Undefined index: price
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\dashboard.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 36, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/das...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/das...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(27): master_admin_view('masteradmin/das...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-23 22:14:14 --> You must set the database table to be used with your query.
+#0 C:\xampp745\htdocs\powernum\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp745\htdocs\powernum\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(29): CodeIgniter\Model->__call('count_total_sel...', Array)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-23 22:18:28 --> You must set the database table to be used with your query.
+#0 C:\xampp745\htdocs\powernum\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp745\htdocs\powernum\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(32): CodeIgniter\Model->__call('count_total_sel...', Array)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-23 22:18:29 --> You must set the database table to be used with your query.
+#0 C:\xampp745\htdocs\powernum\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp745\htdocs\powernum\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(32): CodeIgniter\Model->__call('count_total_sel...', Array)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-23 22:24:23 --> Undefined index: jackpot
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 61, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/das...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/das...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(39): master_admin_view('masteradmin/das...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}

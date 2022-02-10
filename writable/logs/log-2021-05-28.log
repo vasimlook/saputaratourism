@@ -1,0 +1,36 @@
+CRITICAL - 2021-05-28 21:39:11 --> You must set the database table to be used with your query.
+#0 C:\xampp745\htdocs\powernum\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp745\htdocs\powernum\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(30): CodeIgniter\Model->__call('get_total_sell', Array)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-28 21:57:19 --> You must set the database table to be used with your query.
+#0 C:\xampp745\htdocs\powernum\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp745\htdocs\powernum\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(30): CodeIgniter\Model->__call('get_total_sell', Array)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-28 21:58:19 --> You must set the database table to be used with your query.
+#0 C:\xampp745\htdocs\powernum\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp745\htdocs\powernum\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(30): CodeIgniter\Model->__call('get_total_sell', Array)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-28 22:00:36 --> You must set the database table to be used with your query.
+#0 C:\xampp745\htdocs\powernum\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp745\htdocs\powernum\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(30): CodeIgniter\Model->__call('get_total_sell', Array)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -1,0 +1,36 @@
+CRITICAL - 2021-07-01 21:23:56 --> Undefined index: fullsangam_entry_openpana
+#0 C:\xampp745\htdocs\natraj\app\Views\admin\live.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 212, Array)
+#1 C:\xampp745\htdocs\natraj\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/live', Array, true)
+#4 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/live', Array)
+#5 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(109): master_admin_view('admin/live', Array)
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#8 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-01 21:38:54 --> Undefined index: totalprice
+#0 C:\xampp745\htdocs\natraj\app\Views\admin\live.php(233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 233, Array)
+#1 C:\xampp745\htdocs\natraj\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/live', Array, true)
+#4 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/live', Array)
+#5 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(104): master_admin_view('admin/live', Array)
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#8 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-01 22:25:32 --> Trying to access array offset on value of type null
+#0 C:\xampp745\htdocs\natraj\app\Views\admin\live.php(311): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp745\\htd...', 311, Array)
+#1 C:\xampp745\htdocs\natraj\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/live', Array, true)
+#4 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/live', Array)
+#5 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(115): master_admin_view('admin/live', Array)
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#8 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}

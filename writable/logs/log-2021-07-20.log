@@ -1,0 +1,208 @@
+CRITICAL - 2021-07-20 18:26:13 --> syntax error, unexpected '}', expecting end of file
+#0 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/addhalfsa...', Array, true)
+#2 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/addhalfsa...', Array)
+#3 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(1138): master_admin_view('admin/addhalfsa...', Array)
+#4 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_half_sangam()
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 20:25:37 --> Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 490, Array)
+#1 C:\xampp745\htdocs\natraj\system\Security\Security.php(490): setcookie('csrf_cookie_nam...', '220298716a68219...', Array)
+#2 C:\xampp745\htdocs\natraj\system\Security\Security.php(256): CodeIgniter\Security\Security->sendCookie(Object(CodeIgniter\HTTP\IncomingRequest))
+#3 C:\xampp745\htdocs\natraj\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#4 C:\xampp745\htdocs\natraj\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('add-single-digi...', 'before')
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 20:25:37 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35) in C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 137, Array)
+#1 C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-20 20:26:33 --> Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 490, Array)
+#1 C:\xampp745\htdocs\natraj\system\Security\Security.php(490): setcookie('csrf_cookie_nam...', '41c6ddfc79a7284...', Array)
+#2 C:\xampp745\htdocs\natraj\system\Security\Security.php(256): CodeIgniter\Security\Security->sendCookie(Object(CodeIgniter\HTTP\IncomingRequest))
+#3 C:\xampp745\htdocs\natraj\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#4 C:\xampp745\htdocs\natraj\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('add-single-digi...', 'before')
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 20:26:33 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35) in C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 137, Array)
+#1 C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-20 20:27:34 --> Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 490, Array)
+#1 C:\xampp745\htdocs\natraj\system\Security\Security.php(490): setcookie('csrf_cookie_nam...', 'aa095efb31be0a8...', Array)
+#2 C:\xampp745\htdocs\natraj\system\Security\Security.php(256): CodeIgniter\Security\Security->sendCookie(Object(CodeIgniter\HTTP\IncomingRequest))
+#3 C:\xampp745\htdocs\natraj\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#4 C:\xampp745\htdocs\natraj\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('add-single-digi...', 'before')
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 20:27:34 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35) in C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 137, Array)
+#1 C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-20 20:27:53 --> Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 490, Array)
+#1 C:\xampp745\htdocs\natraj\system\Security\Security.php(490): setcookie('csrf_cookie_nam...', 'e4813057d960591...', Array)
+#2 C:\xampp745\htdocs\natraj\system\Security\Security.php(256): CodeIgniter\Security\Security->sendCookie(Object(CodeIgniter\HTTP\IncomingRequest))
+#3 C:\xampp745\htdocs\natraj\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#4 C:\xampp745\htdocs\natraj\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('add-single-digi...', 'before')
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 20:27:53 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35) in C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 137, Array)
+#1 C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-20 20:30:15 --> Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 490, Array)
+#1 C:\xampp745\htdocs\natraj\system\Security\Security.php(490): setcookie('csrf_cookie_nam...', 'a1026af4b47bfe9...', Array)
+#2 C:\xampp745\htdocs\natraj\system\Security\Security.php(256): CodeIgniter\Security\Security->sendCookie(Object(CodeIgniter\HTTP\IncomingRequest))
+#3 C:\xampp745\htdocs\natraj\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#4 C:\xampp745\htdocs\natraj\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('add-single-digi...', 'before')
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 20:30:15 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35) in C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 137, Array)
+#1 C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-20 20:31:01 --> Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 490, Array)
+#1 C:\xampp745\htdocs\natraj\system\Security\Security.php(490): setcookie('csrf_cookie_nam...', '727b333bb99b4f9...', Array)
+#2 C:\xampp745\htdocs\natraj\system\Security\Security.php(256): CodeIgniter\Security\Security->sendCookie(Object(CodeIgniter\HTTP\IncomingRequest))
+#3 C:\xampp745\htdocs\natraj\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#4 C:\xampp745\htdocs\natraj\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('add-single-digi...', 'before')
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 20:31:01 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35) in C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 137, Array)
+#1 C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-20 20:32:08 --> Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 490, Array)
+#1 C:\xampp745\htdocs\natraj\system\Security\Security.php(490): setcookie('csrf_cookie_nam...', '11d6a65da7f366a...', Array)
+#2 C:\xampp745\htdocs\natraj\system\Security\Security.php(256): CodeIgniter\Security\Security->sendCookie(Object(CodeIgniter\HTTP\IncomingRequest))
+#3 C:\xampp745\htdocs\natraj\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#4 C:\xampp745\htdocs\natraj\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('add-single-digi...', 'before')
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 20:32:08 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35) in C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 137, Array)
+#1 C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-20 20:32:22 --> Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 490, Array)
+#1 C:\xampp745\htdocs\natraj\system\Security\Security.php(490): setcookie('csrf_cookie_nam...', '8e39c528e64664d...', Array)
+#2 C:\xampp745\htdocs\natraj\system\Security\Security.php(256): CodeIgniter\Security\Security->sendCookie(Object(CodeIgniter\HTTP\IncomingRequest))
+#3 C:\xampp745\htdocs\natraj\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#4 C:\xampp745\htdocs\natraj\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('add-single-digi...', 'before')
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 20:32:22 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp745\htdocs\natraj\app\Config\Events.php:35) in C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp745\\htd...', 137, Array)
+#1 C:\xampp745\htdocs\natraj\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-20 20:53:14 --> syntax error, unexpected end of file
+#0 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/addmotor', Array, true)
+#2 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/addmotor', Array)
+#3 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(599): master_admin_view('admin/addmotor', Array)
+#4 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_motor()
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 21:16:36 --> Maximum execution time of 400 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-20 21:27:58 --> array_push() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() ex...', 'C:\\xampp745\\htd...', 594, Array)
+#1 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(594): array_push(NULL, Array)
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_motor()
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#4 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-20 21:30:09 --> Undefined variable: insert_array
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(594): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 594, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_motor()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 21:30:48 --> Undefined variable: insert_array
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 107, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_single_digit()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 23:50:00 --> array_keys() expects parameter 1 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_keys() ex...', 'C:\\xampp745\\htd...', 2160, Array)
+#1 C:\xampp745\htdocs\natraj\system\Database\BaseBuilder.php(2160): array_keys('CLOSE')
+#2 C:\xampp745\htdocs\natraj\system\Database\BaseBuilder.php(2090): CodeIgniter\Database\BaseBuilder->setInsertBatch(Array, '', true)
+#3 C:\xampp745\htdocs\natraj\app\Models\Madmin\Area_m.php(140): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#4 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(1804): App\Models\Madmin\Area_m->add_single_halfsangam_batch(Array)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_half_sangam()
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}

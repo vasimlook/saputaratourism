@@ -1,0 +1,86 @@
+CRITICAL - 2021-05-30 15:57:04 --> Undefined index: totalwin
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 28, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-30 15:59:02 --> You must set the database table to be used with your query.
+#0 C:\xampp745\htdocs\powernum\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp745\htdocs\powernum\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(29): CodeIgniter\Model->__call('get_total_paid_...', Array)
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-30 15:59:12 --> Undefined index: jackpot
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\dashboard.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 82, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/das...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/das...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(46): master_admin_view('masteradmin/das...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-30 16:00:36 --> Undefined index: jackpot
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\dashboard.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 82, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/das...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/das...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Masteradmin_c.php(46): master_admin_view('masteradmin/das...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Masteradmin_c->dashboard()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masteradmin_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-05-30 16:34:46 --> mysqli_sql_exception: Unknown column 'ticket_id' in 'field list' in C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT COUNT(ti...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(ti...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(ti...')
+#3 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(83): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(ti...')
+#4 C:\xampp745\htdocs\powernum\app\Controllers\Admin_c.php(21): App\Models\Madmin\Agent_m->get_firstfive_count('1', 1)
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Admin_c->check_powerno('1')
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-30 16:34:46 --> Unknown column 'ticket_id' in 'field list'
+#0 C:\xampp745\htdocs\powernum\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT COUNT(ti...')
+#1 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(ti...')
+#2 C:\xampp745\htdocs\powernum\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(ti...')
+#3 C:\xampp745\htdocs\powernum\app\Models\Madmin\Agent_m.php(83): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(ti...')
+#4 C:\xampp745\htdocs\powernum\app\Controllers\Admin_c.php(21): App\Models\Madmin\Agent_m->get_firstfive_count('1', 1)
+#5 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Admin_c->check_powerno('1')
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-30 16:35:19 --> Undefined variable: res_array
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Admin_c.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 22, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Admin_c->check_powerno('1')
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-30 16:50:15 --> array_multisort(): Array sizes are inconsistent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_multisort...', 'C:\\xampp745\\htd...', 34, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Admin_c.php(34): array_multisort(Array, 3, Array)
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Admin_c->check_powerno('1')
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-30 16:51:20 --> usort() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'usort() expects...', 'C:\\xampp745\\htd...', 30, Array)
+#1 C:\xampp745\htdocs\powernum\app\Controllers\Admin_c.php(30): usort(NULL, Object(Closure))
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Admin_c->check_powerno('1')
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#4 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}

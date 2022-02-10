@@ -1,0 +1,38 @@
+CRITICAL - 2021-05-26 16:58:38 --> Use of undefined constant MASTER_ADMIN_CREATE_USER_LINK - assumed 'MASTER_ADMIN_CREATE_USER_LINK' (this will throw an Error in a future version of PHP)
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\common\sidebar.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp745\\htd...', 52, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/com...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1248): view('masteradmin/com...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agentadmin_c.php(22): master_admin_view('masteradmin/use...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agentadmin_c->index()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agentadmin_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-26 16:59:35 --> Undefined variable: ticket_type
+#0 C:\xampp745\htdocs\powernum\app\Views\masteradmin\adduser.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 30, Array)
+#1 C:\xampp745\htdocs\powernum\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\powernum\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\powernum\system\Common.php(1217): CodeIgniter\View\View->render('masteradmin/add...', Array, true)
+#4 C:\xampp745\htdocs\powernum\system\Common.php(1250): view('masteradmin/add...', Array)
+#5 C:\xampp745\htdocs\powernum\app\Controllers\Agentadmin_c.php(62): master_admin_view('masteradmin/add...', Array)
+#6 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agentadmin_c->add_user()
+#7 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agentadmin_c))
+#8 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-26 17:04:36 --> Undefined index: firstname
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Agentadmin_c.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 51, Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agentadmin_c->add_user()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agentadmin_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-26 17:05:12 --> Call to undefined method App\Models\Madmin\Agent_m::add_user
+#0 C:\xampp745\htdocs\powernum\app\Controllers\Agentadmin_c.php(53): CodeIgniter\Model->__call('add_user', Array)
+#1 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(936): App\Controllers\Agentadmin_c->add_user()
+#2 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agentadmin_c))
+#3 C:\xampp745\htdocs\powernum\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\powernum\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}

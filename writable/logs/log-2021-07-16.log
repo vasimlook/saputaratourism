@@ -1,0 +1,54 @@
+CRITICAL - 2021-07-16 09:28:20 --> Undefined variable: res
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(825): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 825, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodinum()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-16 09:29:33 --> Undefined variable: res
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(825): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 825, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodinum()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-16 09:30:03 --> Undefined variable: res
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(828): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 828, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodinum()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-16 09:35:50 --> Undefined variable: res
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(828): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 828, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodinum()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-16 09:36:59 --> Undefined variable: res
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(828): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 828, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodinum()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-16 09:38:35 --> Undefined variable: res
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(827): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 827, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodinum()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-16 20:45:38 --> Call to undefined function App\Controllers\int()
+#0 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodinum()
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-16 20:46:14 --> Call to undefined function App\Controllers\int()
+#0 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodinum()
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#4 {main}

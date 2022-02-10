@@ -1,0 +1,113 @@
+ERROR - 2021-07-06 11:47:37 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp745\htdocs\natraj\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp745\htdocs\natraj\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `di...')
+#1 C:\xampp745\htdocs\natraj\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `di...')
+#2 C:\xampp745\htdocs\natraj\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `di...')
+#3 C:\xampp745\htdocs\natraj\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `di...', Array, false)
+#4 C:\xampp745\htdocs\natraj\app\Models\Madmin\Area_m.php(74): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(108): App\Models\Madmin\Area_m->add_single_digt(Array)
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_single_digit()
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-06 11:47:37 --> Operand should contain 1 column(s)
+#0 C:\xampp745\htdocs\natraj\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `di...')
+#1 C:\xampp745\htdocs\natraj\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `di...')
+#2 C:\xampp745\htdocs\natraj\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `di...')
+#3 C:\xampp745\htdocs\natraj\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `di...', Array, false)
+#4 C:\xampp745\htdocs\natraj\app\Models\Madmin\Area_m.php(74): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(108): App\Models\Madmin\Area_m->add_single_digt(Array)
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_single_digit()
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-06 11:51:34 --> Undefined variable: validation
+#0 C:\xampp745\htdocs\natraj\app\Views\admin\addsinglepana.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 94, Array)
+#1 C:\xampp745\htdocs\natraj\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/addsingle...', Array, true)
+#4 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/addsingle...', Array)
+#5 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(168): master_admin_view('admin/addsingle...', Array)
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_single_pana()
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-06 12:30:40 --> mysqli_sql_exception: Table 'natraj.jodi_details' doesn't exist in C:\xampp745\htdocs\natraj\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp745\htdocs\natraj\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM j...')
+#1 C:\xampp745\htdocs\natraj\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM j...')
+#2 C:\xampp745\htdocs\natraj\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM j...')
+#3 C:\xampp745\htdocs\natraj\app\Models\Madmin\Market_m.php(118): CodeIgniter\Database\BaseConnection->query('SELECT * FROM j...')
+#4 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(207): App\Models\Madmin\Market_m->get_all_jodi()
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodi()
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-06 12:30:40 --> Table 'natraj.jodi_details' doesn't exist
+#0 C:\xampp745\htdocs\natraj\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM j...')
+#1 C:\xampp745\htdocs\natraj\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM j...')
+#2 C:\xampp745\htdocs\natraj\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM j...')
+#3 C:\xampp745\htdocs\natraj\app\Models\Madmin\Market_m.php(118): CodeIgniter\Database\BaseConnection->query('SELECT * FROM j...')
+#4 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(207): App\Models\Madmin\Market_m->get_all_jodi()
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_jodi()
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-06 12:44:39 --> Undefined variable: validation
+#0 C:\xampp745\htdocs\natraj\app\Views\admin\addhalfsangam.php(182): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 182, Array)
+#1 C:\xampp745\htdocs\natraj\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/addhalfsa...', Array, true)
+#4 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/addhalfsa...', Array)
+#5 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(255): master_admin_view('admin/addhalfsa...', Array)
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_half_sangam()
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#8 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-06 19:40:21 --> Call to a member function get_aankdo() on null
+#0 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->add_aankdo()
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-06 19:44:34 --> Cannot use object of type stdClass as array
+#0 C:\xampp745\htdocs\natraj\system\View\View.php(220): include()
+#1 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/addaankdo', Array, true)
+#3 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/addaankdo', Array)
+#4 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(934): master_admin_view('admin/addaankdo', Array)
+#5 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->add_aankdo()
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-06 21:28:49 --> Trying to get property 'aankdo_open' of non-object
+#0 C:\xampp745\htdocs\natraj\app\Views\admin\addaankdo.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp745\\htd...', 26, Array)
+#1 C:\xampp745\htdocs\natraj\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/addaankdo', Array, true)
+#4 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/addaankdo', Array)
+#5 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(939): master_admin_view('admin/addaankdo', Array)
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->add_aankdo()
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#8 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-06 21:29:08 --> Trying to get property 'aankdo_open' of non-object
+#0 C:\xampp745\htdocs\natraj\app\Views\admin\addaankdo.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp745\\htd...', 26, Array)
+#1 C:\xampp745\htdocs\natraj\system\View\View.php(220): include('C:\\xampp745\\htd...')
+#2 C:\xampp745\htdocs\natraj\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp745\htdocs\natraj\system\Common.php(1217): CodeIgniter\View\View->render('admin/addaankdo', Array, true)
+#4 C:\xampp745\htdocs\natraj\system\Common.php(1250): view('admin/addaankdo', Array)
+#5 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(939): master_admin_view('admin/addaankdo', Array)
+#6 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->add_aankdo()
+#7 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#8 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#10 {main}

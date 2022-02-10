@@ -1,0 +1,29 @@
+CRITICAL - 2021-07-21 14:15:55 --> Undefined index: digit_entry_type
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 85, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_single_digit()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-21 17:40:12 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 17:40:42 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 17:41:40 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 17:44:29 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 17:45:27 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 17:48:32 --> Undefined index: digit_entry_type
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Agent_c.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 85, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Agent_c->add_single_digit()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(65): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,100 @@
+CRITICAL - 2021-06-30 16:01:34 --> Undefined index: fullsangam_entry_closepana
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp745\\htd...', 39, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 16:02:32 --> explode(): Empty delimiter
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'explode(): Empt...', 'C:\\xampp745\\htd...', 41, Array)
+#1 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(41): explode('', '')
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#4 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-30 16:02:54 --> explode(): Empty delimiter
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'explode(): Empt...', 'C:\\xampp745\\htd...', 41, Array)
+#1 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(41): explode('', '100')
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#4 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-30 16:06:01 --> Call to undefined function App\Controllers\int()
+#0 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-30 16:07:48 --> Undefined variable: num
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 47, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 16:11:14 --> Undefined variable: open_digit
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 57, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 16:11:49 --> A non-numeric value encountered
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp745\\htd...', 41, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 16:14:17 --> gettype() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'gettype() expec...', 'C:\\xampp745\\htd...', 38, Array)
+#1 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(38): gettype()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#4 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-30 16:14:34 --> Undefined variable: open_digit
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 47, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 16:14:46 --> Undefined variable: open_digit
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 47, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 16:14:58 --> Undefined variable: open_digit
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 47, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 16:16:06 --> Undefined variable: open_digit
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp745\\htd...', 47, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 16:19:47 --> Trying to access array offset on value of type int
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp745\\htd...', 46, Array)
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 16:45:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultRow()
+#0 C:\xampp745\htdocs\natraj\app\Controllers\Admin_c.php(53): App\Models\Madmin\Market_m->get_digit_test('OPEN', '5')
+#1 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(936): App\Controllers\Admin_c->live()
+#2 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_c))
+#3 C:\xampp745\htdocs\natraj\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp745\htdocs\natraj\index.php(62): CodeIgniter\CodeIgniter->run()
+#5 {main}
