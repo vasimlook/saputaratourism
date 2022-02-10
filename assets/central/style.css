@@ -1,0 +1,120 @@
+.buy-ticket-btn {
+    margin-top: 20px;
+}
+.single-lottery {
+    background: #fff;
+    border: 1px solid #f5f5f5;
+    /*padding: 30px 30px 40px;*/
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.lottery-top h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.genreted-text {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.single-lottery .number-top label {
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 17px;
+}
+.single-lottery .number-top input{
+    position: absolute;
+    top: 20%;
+}
+.lottery-top{
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+.lottery-top .ticket-rate {
+    position: absolute;
+    left: -31px;
+    top: -30px;
+}
+.auto-number {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 30px;
+}
+.number-top {
+    position: relative;
+}
+.single-lottery .number-top input{
+    position: absolute;
+    top: 20%;
+}
+.number-serial li{
+    display: inline-block;
+}
+.number-serial li a {
+    display: block;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 3px 1px;
+}
+.self-ticket {
+    margin-top: 25px;
+}
+.self-ticket span {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.self-ticket li{
+    display:inline-block;
+}
+.number-serial li.active a{
+    display: block;
+    color: #fff;
+    background: #1FC157;
+    border: 1px solid #1FC157;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0px 1px;
+}
+.first5 a{
+    display: block;
+    color: #fff !important;
+    background: #1FC157;
+    border: 1px solid #1FC157;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0px 1px;
+}
+/*.number-serial li.active a,*/
+.powernum a{
+    display: block;
+    color: #fff;
+    background: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0px 1px;
+}
