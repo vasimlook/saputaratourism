@@ -31,11 +31,13 @@ CREATE TABLE `saputara_facility` (
 CREATE TABLE `saputara_facility_categories` (
   `category_id` int(11) NOT NULL AUTO_INCREMENT,
   `category_name` varchar(50) DEFAULT NULL,
+  `category_image` varchar(500) DEFAULT NULL,
+  `category_cover_image` varchar(500) DEFAULT NULL,
   `is_active` int(1) NOT NULL DEFAULT 0,
   `created_on` datetime NOT NULL,
   `created_by` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`category_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4
 
 =======================================================
 
