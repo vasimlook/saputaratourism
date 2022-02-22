@@ -73,135 +73,37 @@
 <section class="featured-jobs section" style="padding: 25px 0;">
     <div class="container">      
         <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="featured-item">
-                    <div class="featured-wrap">
-                        <div class="featured-inner">
-                            <figure class="item-thumb">
-                                <a class="hover-effect" href="<?php echo LISTING_LINK.'1'; ?>">
-                                    <img src="<?php echo BASE_URL; ?>/assets/img/categories/rooms.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="item-body">
-                                <a href="<?php echo LISTING_LINK.'1'; ?>" class="btn btn-sm btn-common" style="width: 100%">Rooms</a>
+
+            <?php
+                if(is_array($categories) && sizeof($categories) > 0){
+                    foreach($categories as $key => $category){
+                        $categoryId     = $category['category_id'];
+                        $categoryTitle = $category['category_name'];
+                        $categoryImage  = $category['category_image'];
+
+                        ?>
+                         <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="featured-item">
+                                <div class="featured-wrap">
+                                    <div class="featured-inner">
+                                        <figure class="item-thumb">
+                                            <a class="hover-effect" href="<?php echo LISTING_LINK.$categoryId; ?>">
+                                                <img src="<?php echo BASE_URL; ?>/assets/img/categories/<?= $categoryImage ?>" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="item-body">
+                                            <a href="<?php echo LISTING_LINK.$categoryId; ?>" class="btn btn-sm btn-common" style="width: 100%"><?= $categoryTitle ?></a>
+                                        </div>
+                                    </div>
+                                </div>                    
                             </div>
                         </div>
-                    </div>                    
-                </div>
-            </div> 
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="featured-item">
-                    <div class="featured-wrap">
-                        <div class="featured-inner">
-                            <figure class="item-thumb">
-                                <a class="hover-effect" href="<?php echo LISTING_LINK.'2'; ?>">
-                                    <img src="<?php echo BASE_URL; ?>/assets/img/categories/food.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="item-body">                                
-                                <a href="<?php echo LISTING_LINK.'2'; ?>" class="btn btn-sm btn-common" style="width: 100%">Food</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="featured-item">
-                    <div class="featured-wrap">
-                        <div class="featured-inner">
-                            <figure class="item-thumb">
-                                <a class="hover-effect" href="<?php echo LISTING_LINK.'3'; ?>">
-                                    <img src="<?php echo BASE_URL; ?>/assets/img/categories/rides.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="item-body">                                
-                                <a href="<?php echo LISTING_LINK.'3'; ?>" class="btn btn-sm btn-common" style="width: 100%">Rides</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="featured-item">
-                    <div class="featured-wrap">
-                        <div class="featured-inner">
-                            <figure class="item-thumb">
-                                <a class="hover-effect" href="<?php echo LISTING_LINK.'5'; ?>">
-                                    <img src="<?php echo BASE_URL; ?>/assets/img/categories/saloon.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="item-body">                                
-                                <a href="<?php echo LISTING_LINK.'4'; ?>" class="btn btn-sm btn-common" style="width: 100%">Beauty Parlor</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="featured-item">
-                    <div class="featured-wrap">
-                        <div class="featured-inner">
-                            <figure class="item-thumb">
-                                <a class="hover-effect" href="<?php echo LISTING_LINK.'4'; ?>">
-                                    <img src="<?php echo BASE_URL; ?>/assets/img/categories/hospital.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="item-body">                                
-                                <a href="<?php echo LISTING_LINK.'5'; ?>" class="btn btn-sm btn-common" style="width: 100%">Hospital</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-          
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="featured-item">
-                    <div class="featured-wrap">
-                        <div class="featured-inner">
-                            <figure class="item-thumb">
-                                <a class="hover-effect" href="<?php echo LISTING_LINK.'6'; ?>">
-                                    <img src="<?php echo BASE_URL; ?>/assets/img/categories/garage.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="item-body">                                
-                                <a href="<?php echo LISTING_LINK.'6'; ?>" class="btn btn-sm btn-common" style="width: 100%">Garage</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="featured-item">
-                    <div class="featured-wrap">
-                        <div class="featured-inner">
-                            <figure class="item-thumb">
-                                <a class="hover-effect" href="<?php echo LISTING_LINK.'7'; ?>">
-                                    <img src="<?php echo BASE_URL; ?>/assets/img/categories/photo.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="item-body">                                
-                                <a href="<?php echo LISTING_LINK.'7'; ?>" class="btn btn-sm btn-common" style="width: 100%">Photography</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="featured-item">
-                    <div class="featured-wrap">
-                        <div class="featured-inner">
-                            <figure class="item-thumb">
-                                <a class="hover-effect" href="<?php echo LISTING_LINK.'8'; ?>">
-                                    <img src="<?php echo BASE_URL; ?>/assets/img/categories/shoping.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="item-body">                                
-                                <a href="<?php echo LISTING_LINK.'8'; ?>" class="btn btn-sm btn-common" style="width: 100%">Shoping</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>         
+                        <?php
+                    }
+                    
+                }
+            ?>
+                     
         </div>
     </div>
 </section>
