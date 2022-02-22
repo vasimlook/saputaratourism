@@ -1,4 +1,32 @@
-        
+<?php
+    $slider_html = '';
+    $data_target_html = '';
+    if(is_array($slider) && sizeof($slider) > 0){
+        foreach($slider as $key => $slide){
+
+            $active = '';
+            if($key == 0)
+                $active = 'active';
+            $image = $slide['image'];
+            $sliderId = $slide['id'];
+            
+            
+            $slider_html .= '<div class="item slidebackground '.$active.'" style="background:url('.BASE_URL.'/assets/img/'.$image.');">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="carousel-caption">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>'; 
+
+            $data_target_html .= '<li data-target="#slider-experience" data-slide-to="'.$key.'" class="'.$active.'" style="width: 8px;height: 8px;"></li>';
+          
+        }
+    }
+
+ ?> 
 <section id="slider"><!--
 <div class="tp-banner-container" style="overflow: visible;">  -->
     <!-- Full Page Image Background Carousel Header -->  
@@ -9,40 +37,12 @@
                 <div id="slider-experience" class="carousel slide" data-ride="carousel">
                     <!-- indicators dot nav -->
                     <ol class="carousel-indicators">
-                        <li data-target="#slider-experience" data-slide-to="0" class="active" style="width: 8px;height: 8px;"></li>
-                        <li data-target="#slider-experience" data-slide-to="1" style="width: 8px;height: 8px;"></li>
-                        <li data-target="#slider-experience" data-slide-to="2"></li>
+                        <?=  $data_target_html ?>
                         <!--<li data-target="#slider-experience" data-slide-to="3"></li>-->
                     </ol>
                     <!-- wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item slidebackground active" style="background:url(<?php echo BASE_URL; ?>/assets/img/slide1.jpg);">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="carousel-caption">
-                                        &nbsp;
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item slidebackground" style="background:url(<?php echo BASE_URL; ?>/assets/img/slide2.jpg);">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="carousel-caption">
-                                        &nbsp;
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="item slidebackground" style="background:url(<?php echo BASE_URL; ?>/assets/img/slide3.jpg);">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="carousel-caption">
-                                        &nbsp;
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       <?= $slider_html ?>
                     </div>
                     <!-- controls next and prev buttons -->
 

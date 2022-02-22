@@ -24,5 +24,13 @@ class Home_model extends Model {
         return $categories;
         
     } 
+
+    public function get_home_slider(){
+        $slider = $this->db->query("SELECT *
+                                    FROM   saputara_home_slider
+                                    WHERE is_active = 1 ");
+        $sliders = $slider->getResultArray();      
+        return $sliders;
+    }
    
 }
