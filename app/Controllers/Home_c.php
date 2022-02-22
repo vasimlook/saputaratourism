@@ -16,8 +16,10 @@ class Home_c extends BaseController
     public function index() {    
         $slider = $this->Home_m->get_home_slider();
         $categories = $this->Home_m->get_categories();     
+        $saputara_about = $this->Home_m->get_saputara_about();      
         $data['categories'] = $categories;
         $data['slider'] = $slider;
+        $data['saputara_about'] = $saputara_about;
         $data['title'] = HOME_TITLE;        
         echo front_view('home',$data);
     }

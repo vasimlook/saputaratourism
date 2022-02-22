@@ -32,5 +32,13 @@ class Home_model extends Model {
         $sliders = $slider->getResultArray();      
         return $sliders;
     }
+
+    public function get_saputara_about(){
+        $about = $this->db->query("SELECT *
+                                    FROM   saputara_about
+                                    WHERE is_active = 1 ");
+        $about = $about->getResultArray();      
+        return current($about);
+    }
    
 }

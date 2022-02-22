@@ -209,15 +209,26 @@
 <!-- Main container Start -->  
       <div class="about section">
         <div class="container">
-          <div class="row">          
+          <div class="row">        
+            <?php
+                $aboutImage = "";
+                $aboutTitle = "";
+                $aboutDescription = "";
+                if(isset($saputara_about) && is_array($saputara_about)){
+                    $aboutImage = $saputara_about['image'];
+                    $aboutTitle = $saputara_about['title'];
+                    $aboutDescription = $saputara_about['description'];
+
+                }
+            ?>    
             <div class="col-md-6 col-sm-12">
-              <img src="<?php echo BASE_URL; ?>/assets/img/about.jpg" alt="">              
+              <img src="<?php echo BASE_URL; ?>/assets/img/<?=  $aboutImage ?>" alt="">              
             </div>
             <div class="col-md-6 col-sm-12">
               <div class="about-content">
-                <h2 class="medium-title">About Saputara</h2>
-                <p>Saputara means the ‘Abode of Serpents’ and a snake image on the banks of the river Sarpagana is worshiped by the Adivasis on Holi.</p>
-                <p>Nestled over the gigantic Sahyadri mountain range in Gujarat, the picture-perfect hill station of Saputara boasts of endless natural beauty.</p>                
+                <h2 class="medium-title"><?= $aboutTitle ?></h2>
+                    <?= $aboutDescription ?>
+                    <br>
                 <a href="<?php echo CONTACT_LINK; ?>" class="btn btn-common">Enquire now</a>
               </div>
             </div>
