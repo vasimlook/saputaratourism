@@ -125,3 +125,18 @@ CREATE TABLE `saputara_numbers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
 
 =======================================================
+
+=======================================================
+
+CREATE TABLE `saputara_about` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) NOT NULL,
+  `description` text DEFAULT NULL,
+  `image` varchar(200) NOT NULL,
+  `is_active` int(1) NOT NULL DEFAULT 0,
+  `created_on` datetime NOT NULL,
+  `updated_on` datetime NOT NULL,
+  `action_by` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4
+=======================================================
