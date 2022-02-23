@@ -7,6 +7,7 @@ CREATE TABLE `saputara_facility` (
   `category_id` int(11) NOT NULL,
   `facitlity_type` varchar(20) NOT NULL,
   `facility_title` varchar(50) DEFAULT NULL,
+  `image` varchar(50) DEFAULT NULL,
   `check_in_time` datetime NOT NULL,
   `check_out_time` datetime NOT NULL,
   `rating` int(10) NOT NULL DEFAULT 0,
@@ -22,7 +23,7 @@ CREATE TABLE `saputara_facility` (
   `created_on` datetime NOT NULL,
   `updated_on` datetime NOT NULL,
   PRIMARY KEY (`facility_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4
 
 =======================================================
 
