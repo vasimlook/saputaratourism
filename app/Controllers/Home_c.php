@@ -43,7 +43,13 @@ class Home_c extends BaseController
         $data['title'] = NEWS_TITLE;        
         echo front_view('news',$data);
     }
-    public function listing($cat_id) {        
+    public function listing($cat_id) {
+        
+        $cat_id = (int)$cat_id;
+        $categoryDetails = array();
+        $categoryDetails = $this->Home_m->get_category_details($cat_id);
+        $categoryDetails['facilities'] = $this->Home_m->get_facilities($cat_id);
+        $data['categoryDetails'] = $categoryDetails;
         $data['title'] = LISTING;        
         echo front_view('listing',$data);
     }

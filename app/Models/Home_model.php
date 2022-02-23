@@ -23,7 +23,25 @@ class Home_model extends Model {
         $categories = $category->getResultArray();      
         return $categories;
         
-    } 
+    }
+
+    public function get_category_details($categoryId){
+        $category = $this->db->query("SELECT *
+                                    FROM   saputara_facility_categories
+                                    WHERE category_id = {$categoryId} ");
+        $categories = $category->getRowArray();      
+        return $categories;
+    }
+    
+    public function get_facilities($categoryId){
+        $facility = $this->db->query("SELECT *
+                                    FROM   saputara_facility
+                                    WHERE is_active = 1
+                                    AND category_id = {$categoryId} ");
+        $facilities = $facility->getResultArray();      
+        return $facilities;
+
+    }
 
     public function get_home_slider(){
         $slider = $this->db->query("SELECT *
@@ -37,8 +55,8 @@ class Home_model extends Model {
         $about = $this->db->query("SELECT *
                                     FROM   saputara_about
                                     WHERE is_active = 1 ");
-        $about = $about->getResultArray();      
-        return current($about);
+        $about = $about->getRowArray();      
+        return $about;
     }
    
 }
