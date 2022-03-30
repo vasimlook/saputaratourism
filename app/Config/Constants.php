@@ -98,3 +98,18 @@ define('NEWS_TITLE', 'NEWS');
 
 define('LISTING', 'LISTING');
 
+
+define('ADMIN_LOGIN_TITLE', 'SAPUTARA-TOURISM-ADMIN-LOGIN');
+define('ADMIN_DASHBOARD', 'Admin dashboard');
+define('ADMIN_UPDATE_PROFILE_TITLE', 'Admin update profile');
+define('ADMIN_PROJECT_TITLE', 'Admin project');
+define('ADMIN_VIEW_PROJECT_TITLE', 'Admin view project');
+define('ADMIN_EDIT_PROJECT_TITLE', 'Admin edit project');
+
+
+
+define('ADMIN_LOGIN_LINK', BASE_URL_CI.'/admin/login');
+define('ADMIN_LOGOUT_LINK', BASE_URL_CI.'/admin/logout');
+define('ADMIN_DASHBOARD_LINK', BASE_URL_CI.'/admin/dashboard');
+define('ADMIN_UPDATE_PROFILE_LINK', BASE_URL_CI.'/admin/update-profile');
+

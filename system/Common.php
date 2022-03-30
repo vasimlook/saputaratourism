@@ -1250,6 +1250,17 @@ function master_admin_view($page, $data = array()) {
     echo view($page, $data);
     echo view('admin/common/footer', $data);
 }
+function admin_view($page, $data = array()) {
+    if (!is_file(APPPATH . "/Views/$page" . '.php')) {		
+        // Whoops, we don't have a page for that!
+        throw new \CodeIgniter\Exceptions\PageNotFoundException($page);
+    }
+    echo view('admin/common/header', $data);
+    echo view('admin/common/sidebar', $data);
+    echo view('admin/common/topnavigation', $data);
+    echo view($page, $data);
+    echo view('admin/common/footer', $data);
+}
 function front_view($page, $data = array()) {
     if (!is_file(APPPATH . "/Views/$page" . '.php')) {
         // Whoops, we don't have a page for that!

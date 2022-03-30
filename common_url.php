@@ -13,10 +13,12 @@ define('BASE_URL',$urllink);
 define('BASE_URL_CI',$urllink);
 define('BASE_URL_DATATABLES',BASE_URL.'/');
 define('BASE_URL_API', 'http://' . $_SERVER['HTTP_HOST'] . implode('/', $subdomain) . '/');
-define('APPNAME', 'SILVER');
+define('APPNAME', 'SAPUTARA TOURISM');
 define('UPLOAD_FOLDER', BASE_URL.'/uploads/');
 define('IMG_DIR','uploads/');
 define('FILE_DIR', "/uploads/doc/");
 define('ADMIN_ASSETS_FOLDER', BASE_URL.'/assets/admin/');
 define('CENTRAL_ASSETS_FOLDER', BASE_URL.'/assets/central/');
+define('ADMIN_MAIN_ASSETS_FOLDER', BASE_URL.'/assets/admin/');
+define('EMPLOYEE_ASSETS_FOLDER', BASE_URL.'/assets/employee/');
 ?>
