@@ -149,6 +149,15 @@ function sessionAdmin($row) {
     $session_data['admin']['admin_usertype'] = 'admin';   
     return $session_data;
 }
+
+function sessionClient($row) {  
+    $session_data=array();
+    foreach ($row as $key => &$value) {        
+            $session_data['client'][$key] = $value;        
+    }    
+    $session_data['client']['client_usertype'] = 'client';   
+    return $session_data;
+}
 function sessionCheckAdmin() {
     if ((!isset($_SESSION['admin']['admin_user_id'])) || !isset($_SESSION['admin']['admin_usertype'])) {    
         header('Location: ' . ADMIN_LOGIN_LINK);
@@ -162,13 +171,31 @@ function sessionCheckAdmin() {
     }
     return true;
 }
+
+function sessionCheckClient() {
+    if ((!isset($_SESSION['client']['client_user_id'])) || !isset($_SESSION['client']['client_usertype'])) {    
+        header('Location: ' . CLIENT_LOGIN_LINK);
+        exit();
+    }
+    if (isset($_SESSION['client']['client_usertype'])) {
+        if ($_SESSION['client']['client_usertype'] != 'client') {            
+            header('Location: ' . CLIENT_LOGIN_LINK);
+            exit();
+        }
+    }
+    return true;
+}
+
 function logoutUser($usertype) {
     if($usertype=='vendor'){
         unset($_SESSION['vendor']); 
     }
     if($usertype=='admin'){
         unset($_SESSION['admin']); 
-    }           
+    }  
+    if($usertype=='client'){
+        unset($_SESSION['client']); 
+    }          
     return true;
 }
 

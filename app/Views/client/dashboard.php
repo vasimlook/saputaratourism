@@ -20,8 +20,8 @@
                                     <div class="card-inner">
                                         <div class="card-title-group">
                                             <div class="card-title">
-                                                <h6 class="title">Total Clients</h6>
-                                                <div class="info"><span> Total Clients</span></div>
+                                                <h6 class="title">Total Hotels</h6>
+                                                <div class="info"><span> Total Hotels</span></div>
                                             </div>
                                         </div>
                                         <div class="data">

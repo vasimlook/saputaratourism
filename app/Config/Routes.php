@@ -47,11 +47,20 @@ $routes->add('news', 'Home_c::news');
 $routes->add('listing/(:num)', 'Home_c::listing/$1');
 
 
-
+// START ADMIN ROUTES
 $routes->add('admin/login', 'Admin_login_c::index');
 $routes->add('admin/logout', 'Admin_login_c::logout');
 $routes->add('admin/dashboard', 'Admin_c::admin_dashboard');
 $routes->add('admin/update-profile', 'Admin_c::update_profile');
+
+
+
+// START CLIENT ROUTES
+$routes->add('client/login', 'Client_login_c::index');
+$routes->add('client/logout', 'Client_login_c::logout');
+$routes->add('client/dashboard', 'Client_c::client_dashboard');
+$routes->add('client/update-profile', 'Client_c::client_profile');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

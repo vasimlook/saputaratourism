@@ -98,18 +98,27 @@ define('NEWS_TITLE', 'NEWS');
 
 define('LISTING', 'LISTING');
 
-
+// START ADMIN TITLES
 define('ADMIN_LOGIN_TITLE', 'SAPUTARA-TOURISM-ADMIN-LOGIN');
 define('ADMIN_DASHBOARD', 'Admin dashboard');
 define('ADMIN_UPDATE_PROFILE_TITLE', 'Admin update profile');
-define('ADMIN_PROJECT_TITLE', 'Admin project');
-define('ADMIN_VIEW_PROJECT_TITLE', 'Admin view project');
-define('ADMIN_EDIT_PROJECT_TITLE', 'Admin edit project');
 
 
-
+// START ADMIN LINK
 define('ADMIN_LOGIN_LINK', BASE_URL_CI.'/admin/login');
 define('ADMIN_LOGOUT_LINK', BASE_URL_CI.'/admin/logout');
 define('ADMIN_DASHBOARD_LINK', BASE_URL_CI.'/admin/dashboard');
 define('ADMIN_UPDATE_PROFILE_LINK', BASE_URL_CI.'/admin/update-profile');
+
+// START CLIENT TITLE
+define('CLIENT_LOGIN_TITLE', 'SAPUTARA-TOURISM-CLIENT-LOGIN');
+define('CLIENT_DASHBOARD', 'Client dashboard');
+define('CLIENT_UPDATE_PROFILE_TITLE', 'Client update profile');
+
+
+// START CLIENT LINK
+define('CLIENT_LOGIN_LINK', BASE_URL_CI.'/client/login');
+define('CLIENT_LOGOUT_LINK', BASE_URL_CI.'/client/logout');
+define('CLIENT_DASHBOARD_LINK', BASE_URL_CI.'/client/dashboard');
+define('CLIENT_UPDATE_PROFILE_LINK', BASE_URL_CI.'/client/update-profile');
 
