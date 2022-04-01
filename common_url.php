@@ -21,4 +21,5 @@ define('ADMIN_ASSETS_FOLDER', BASE_URL.'/assets/admin/');
 define('CENTRAL_ASSETS_FOLDER', BASE_URL.'/assets/central/');
 define('ADMIN_MAIN_ASSETS_FOLDER', BASE_URL.'/assets/admin/');
 define('EMPLOYEE_ASSETS_FOLDER', BASE_URL.'/assets/employee/');
+define('FRONT_ASSETS_FOLDER', BASE_URL.'/assets/front/');
 ?>
