@@ -3,7 +3,7 @@
 				<span></span>
 				<h2>Famous Shops</h2>
 				<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
-				<a href="#">See all</a>
+				<a href="<?php echo LISTING_LINK.'0' ?>">See all</a>
 			</div>
 			<div class="row add_bottom_30">
 				<div class="col-lg-3 col-sm-6">
@@ -53,7 +53,7 @@
 				<span></span>
 				<h2>Popular Hotels</h2>
 				<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
-				<a href="grid-listings-filterscol.html">See all</a>
+				<a href="<?php echo LISTING_LINK.'0' ?>">See all</a>
 			</div>
 			<div class="row add_bottom_30">
 				<div class="col-lg-3 col-sm-6">
@@ -107,7 +107,7 @@
 				<span></span>
 				<h2>Top Restaurants</h2>
 				<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
-				<a href="grid-listings-filterscol.html">See all</a>
+				<a href="<?php echo LISTING_LINK.'0' ?>">See all</a>
 			</div>
 			<div class="row ">
 				<div class="col-lg-3 col-sm-6">
