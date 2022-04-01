@@ -79,24 +79,16 @@ defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automat
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 
-//**************************************MASTER ADMIN LINK****************************//
+//**************************************FRONT-END LINK****************************//
 define('HOME_LINK', BASE_URL.'/home');
-define('ABOUT_US_LINK', BASE_URL.'/about');
-define('EXPLORE_LINK', BASE_URL.'/explore');
-define('CONTACT_LINK', BASE_URL.'/contact');
-define('FESTIVAL_LINK', BASE_URL.'/festival');
-define('NEWS_LINK', BASE_URL.'/news');
-
 define('LISTING_LINK', BASE_URL.'/listing/');
-//**************************************MASTER ADMIN TITLE****************************//
-define('HOME_TITLE', 'HOME');
-define('ABOUT_TITLE', 'ABOUT');
-define('EXPLORE_TITLE', 'EXPLORE');
-define('CONTACT_TITLE', 'CONTACT');
-define('FESTIVAL_TITLE', 'FESTIVAL');
-define('NEWS_TITLE', 'NEWS');
+define('DETAILS_LINK', BASE_URL.'/details/');
 
+
+//**************************************FRONT-END ADMIN TITLE****************************//
+define('HOME_TITLE', 'HOME');
 define('LISTING', 'LISTING');
+define('DETAILS', 'DETAILS');
 
 // START ADMIN TITLES
 define('ADMIN_LOGIN_TITLE', 'SAPUTARA-TOURISM-ADMIN-LOGIN');

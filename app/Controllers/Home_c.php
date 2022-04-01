@@ -23,26 +23,7 @@ class Home_c extends BaseController
         $data['title'] = HOME_TITLE;        
         echo front_view('home',$data);
     }
-    public function about() {        
-        $data['title'] = ABOUT_TITLE;        
-        echo front_view('about',$data);
-    }
-    public function explore() {        
-        $data['title'] = EXPLORE_TITLE;        
-        echo front_view('explore',$data);
-    }
-    public function contact() {        
-        $data['title'] = CONTACT_TITLE;        
-        echo front_view('contact',$data);
-    }
-    public function festival() {        
-        $data['title'] = FESTIVAL_TITLE;        
-        echo front_view('festival',$data);
-    }
-    public function news() {        
-        $data['title'] = NEWS_TITLE;        
-        echo front_view('news',$data);
-    }
+  
     public function listing($cat_id) {
         
         $cat_id = (int)$cat_id;
@@ -52,6 +33,11 @@ class Home_c extends BaseController
         $data['categoryDetails'] = $categoryDetails;
         $data['title'] = LISTING;        
         echo front_view('listing',$data);
+    }
+
+    public function details($id) {
+        $data['title'] = DETAILS;        
+        echo front_view('details',$data);
     }
     
     public function page404() {        

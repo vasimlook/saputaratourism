@@ -35,16 +35,11 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home_c::index');
 $routes->add('404_override', 'Home_c::page404');
 $routes->add('errorpage', 'Home_c::page404');
-//************************************Admin side route****************************//
+//************************************FRONT-END side route****************************//
 
 $routes->add('home', 'Home_c::index');
-$routes->add('about', 'Home_c::about');
-$routes->add('explore', 'Home_c::explore');
-$routes->add('contact', 'Home_c::contact');
-$routes->add('festival', 'Home_c::festival');
-$routes->add('news', 'Home_c::news');
-
 $routes->add('listing/(:num)', 'Home_c::listing/$1');
+$routes->add('details/(:num)', 'Home_c::details/$1');
 
 
 // START ADMIN ROUTES
