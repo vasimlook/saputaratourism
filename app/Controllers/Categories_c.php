@@ -33,6 +33,11 @@ class Categories_c extends BaseController{
             
         }                      
     }
+
+    public function view(){
+        $data['title'] = VIEW_CATEGOIRES; 
+        echo admin_view('admin/view_categories',$data);
+    }
     
     public function add(){
 

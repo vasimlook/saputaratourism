@@ -41,7 +41,7 @@
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
                                             <a href="<?php echo ADMIN_ADD_CATEGORIES_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">Add Category</span></a>
-                                            <a href="#" class="nk-menu-link"><span class="nk-menu-text">View Categories</span></a>
+                                            <a href="<?php echo ADMIN_VIEW_CATEGORIES_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">View Categories</span></a>
                                         </li>                                       
                                     </ul>                                     
                                 </li>                               

@@ -54,6 +54,89 @@
         });
     });
 </script>
+
+<?php if ($title == VIEW_CATEGOIRES) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            fill_datatable1();
+
+            function fill_datatable1() {
+                $('#example').DataTable({
+                    responsive: {
+                        details: {
+                            type: 'column',
+                            target: 'tr'
+                        }
+                    },
+
+                    columnDefs: [{
+                        className: 'control',
+                        orderable: false,
+                        targets: 0
+                    }],
+                    "processing": true,
+                    "serverSide": true,
+                    "pageLength": 10,
+                    "paginationType": "full_numbers",
+                    "lengthMenu": [
+                        [10, 25, 50, 100],
+                        [10, 25, 50, 100]
+                    ],
+                    "ajax": {
+                        'type': 'POST',
+                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/category_list.php' ?>",
+                    },
+                    "columns": [{
+                            "data": "index"
+                        },
+                        {
+                            "data": "category_id"
+                        },
+                        {
+                            "data": "category_title"
+                        },
+                        {
+                            "data": "is_active"
+                        },
+                        {
+                            "data": "action"
+                        }
+                    ]
+                });
+            }
+
+            $(document).on('change', '.projects_status', function(res) {
+
+                var projects_status = 0;
+                var projects_id = $(this).attr('data-id');              
+                if ($(this).prop('checked') == true) {
+                    projects_status = 1;
+                }
+
+                var data = {
+                    projects_status,
+                    projects_id
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "",
+                    data: data,
+                    success: function(res) {
+                        var res = $.parseJSON(res);
+
+                        var message  = (projects_status == 1) ? 'Project activated' : 'Project deactivated';
+                        if (res.success == 'success' ) {
+                            alert(message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+<?php } ?>
+
 </body>
 
 </html>
