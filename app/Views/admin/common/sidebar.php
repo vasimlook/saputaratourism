@@ -36,12 +36,12 @@
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
                                         <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
-                                        <span class="nk-menu-text">Menu 1</span>
+                                        <span class="nk-menu-text">Categories</span>
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="#" class="nk-menu-link"><span class="nk-menu-text">Sub menu 1</span></a>
-                                            <a href="#" class="nk-menu-link"><span class="nk-menu-text">Sub menu 2</span></a>
+                                            <a href="<?php echo ADMIN_ADD_CATEGORIES_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">Add Category</span></a>
+                                            <a href="#" class="nk-menu-link"><span class="nk-menu-text">View Categories</span></a>
                                         </li>                                       
                                     </ul>                                     
                                 </li>                               

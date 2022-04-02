@@ -47,6 +47,7 @@ $routes->add('admin/login', 'Admin_login_c::index');
 $routes->add('admin/logout', 'Admin_login_c::logout');
 $routes->add('admin/dashboard', 'Admin_c::admin_dashboard');
 $routes->add('admin/update-profile', 'Admin_c::update_profile');
+$routes->add('admin/add-categories', 'Categories_c::add');
 
 
 
