@@ -106,27 +106,27 @@
                 });
             }
 
-            $(document).on('change', '.projects_status', function(res) {
+            $(document).on('change', '.category_status', function(res) {
 
-                var projects_status = 0;
-                var projects_id = $(this).attr('data-id');              
+                var category_status = 0;
+                var category_id = $(this).attr('data-id');              
                 if ($(this).prop('checked') == true) {
-                    projects_status = 1;
+                    category_status = 1;
                 }
 
                 var data = {
-                    projects_status,
-                    projects_id
+                    category_status,
+                    category_id
                 }
 
                 $.ajax({
                     type: "POST",
-                    url: "",
+                    url: "<?php echo ADMIN_UPDATE_CATEGORY_STATUS ?>",
                     data: data,
                     success: function(res) {
                         var res = $.parseJSON(res);
 
-                        var message  = (projects_status == 1) ? 'Project activated' : 'Project deactivated';
+                        var message  = (category_status == 1) ? 'Category activated' : 'Category deactivated';
                         if (res.success == 'success' ) {
                             alert(message);
                         }

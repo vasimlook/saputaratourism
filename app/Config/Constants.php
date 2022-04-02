@@ -105,6 +105,8 @@ define('ADMIN_DASHBOARD_LINK', BASE_URL_CI.'/admin/dashboard');
 define('ADMIN_UPDATE_PROFILE_LINK', BASE_URL_CI.'/admin/update-profile');
 define('ADMIN_ADD_CATEGORIES_LINK', BASE_URL_CI.'/admin/add-categories');
 define('ADMIN_VIEW_CATEGORIES_LINK', BASE_URL_CI.'/admin/view-categories');
+define('ADMIN_UPDATE_CATEGORY_STATUS', BASE_URL_CI.'/admin/update-status');
+
 
 // START CLIENT TITLE
 define('CLIENT_LOGIN_TITLE', 'SAPUTARA-TOURISM-CLIENT-LOGIN');

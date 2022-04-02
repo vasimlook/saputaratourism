@@ -83,6 +83,7 @@ class Categories_c extends BaseController{
         $data['title'] = 'error';        
         echo single_page('errors/html/custome_error_404',$data);
     }
+    
 
     function validate_category($categoryData){
         $category_title = trim($categoryData['category_title']);      
@@ -107,6 +108,26 @@ class Categories_c extends BaseController{
           'error_messages' => $error_messages,
           'category_details' => $category_details
         );
+    }
+
+    
+    public function update_status(){
+        $category_status = (int) $_REQUEST['category_status'];
+        $projects_id = (int) $_REQUEST['category_id'];
+        $update =  $this->Categories_m->update_category_status($category_status,$projects_id);
+    
+        if($update){
+          $output = array(
+            'success' => 'success'
+          );
+        }else{
+          $output = array(
+            'error' => true
+          );
+        }
+    
+        echo json_encode($output);
+        
       }
 }
 ?>

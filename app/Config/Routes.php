@@ -49,6 +49,7 @@ $routes->add('admin/dashboard', 'Admin_c::admin_dashboard');
 $routes->add('admin/update-profile', 'Admin_c::update_profile');
 $routes->add('admin/add-categories', 'Categories_c::add');
 $routes->add('admin/view-categories', 'Categories_c::view');
+$routes->add('admin/update-status', 'Categories_c::update_status');
 
 
 

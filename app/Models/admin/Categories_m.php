@@ -47,5 +47,18 @@ class Categories_m extends Model
         $builder->where('category_id ', $categoryId);
         return $builder->update($params);
     }
+
+    public function update_category_status($category_status,$category_id){
+        $category_id = (int)$category_id;
+
+        if($category_id === 0)
+            return false;
+
+        $params['is_active'] = (int)$category_status;
+        $builder = $this->db->table('saputara_facility_categories');
+        $builder->where('category_id', $category_id);
+        return $builder->update($params);
+        
+    }
     
 }
