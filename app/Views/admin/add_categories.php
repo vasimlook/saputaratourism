@@ -15,15 +15,15 @@ $urgent_need = "";
 if (isset($category_details) && (is_array($category_details) && sizeof($category_details) > 0)) {
     $category_title = (isset($category_details['category_title'])) ? $category_details['category_title'] : '';   
 
-    if (isset($category_details['category_title'])) {
-        if ($category_details['category_title'] == 1) {
-            $category_title = "checked";
+    if (isset($category_details['is_active'])) {
+        if ($category_details['is_active'] == 1) {
+            $is_active = "checked";
         }
     }
 }
 
 if ($edit_mode) {
-    // $ActionLink = ADMIN_EDIT_PROJECT_LINK . '/' . $category_id;
+    $ActionLink = ADMIN_EDIT_CATEGORY_LINK . '/' . $category_id;
     $pageTitle = "Edit Category";     
 }
 ?>

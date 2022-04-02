@@ -6,7 +6,7 @@
                     <div class="nk-block nk-block-lg">
                         <div class="nk-block-head">
                             <div class="nk-block-head-content">
-                                <h4 class="nk-block-title">Projects List</h4>
+                                <h4 class="nk-block-title">Category List</h4>
                                 <div class="nk-block-des">                                   
                                 </div>
                             </div>

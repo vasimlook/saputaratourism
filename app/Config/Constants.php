@@ -96,6 +96,7 @@ define('ADMIN_DASHBOARD', 'Admin dashboard');
 define('ADMIN_UPDATE_PROFILE_TITLE', 'Admin update profile');
 define('ADD_CATEGOIRES', 'Add Categories');
 define('VIEW_CATEGOIRES', 'View Categories');
+define('ADMIN_EDIT_CATEGORY_TITLE', 'Edit Categories');
 
 
 // START ADMIN LINK
@@ -106,6 +107,7 @@ define('ADMIN_UPDATE_PROFILE_LINK', BASE_URL_CI.'/admin/update-profile');
 define('ADMIN_ADD_CATEGORIES_LINK', BASE_URL_CI.'/admin/add-categories');
 define('ADMIN_VIEW_CATEGORIES_LINK', BASE_URL_CI.'/admin/view-categories');
 define('ADMIN_UPDATE_CATEGORY_STATUS', BASE_URL_CI.'/admin/update-status');
+define('ADMIN_EDIT_CATEGORY_LINK', BASE_URL_CI.'/edit-category');
 
 
 // START CLIENT TITLE

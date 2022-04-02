@@ -50,6 +50,7 @@ $routes->add('admin/update-profile', 'Admin_c::update_profile');
 $routes->add('admin/add-categories', 'Categories_c::add');
 $routes->add('admin/view-categories', 'Categories_c::view');
 $routes->add('admin/update-status', 'Categories_c::update_status');
+$routes->add('edit-category/(:any)', 'Categories_c::edit_category/$1');
 
 
 

@@ -65,7 +65,7 @@ class Categories_c extends BaseController{
             
     
             successOrErrorMessage("Category has been successfully created", 'success');
-            // return redirect()->to(ADMIN_VIEW_CATEGORY_LINK);
+            return redirect()->to(ADMIN_VIEW_CATEGORIES_LINK);
           }
         } else if (is_array($error_messages) && sizeof($error_messages) > 0) {
           $errors = implode('<br>', $error_messages);
@@ -109,6 +109,47 @@ class Categories_c extends BaseController{
           'category_details' => $category_details
         );
     }
+
+    public function edit_category($category_id){
+        helper('form');  
+        $category_details = $this->Categories_m->get_category_details($category_id);
+        
+        $has_error = false;
+        $error_messages  = array();
+        $submitForm = false;
+      
+       
+  
+        if (isset($_POST['category_title']) ) {
+    
+          $submitForm = true;
+          $validate = self::validate_category($_POST);
+    
+          $has_error = $validate['has_error'];
+          $error_messages = $validate['error_messages'];
+          $category_details = $validate['category_details'];               
+        }
+  
+        if ($submitForm && !$has_error && (is_array($category_details) && sizeof($category_details) > 0)) {
+          //create projects
+    
+          $update = $this->Categories_m->update_category($category_details,$category_id);
+    
+          if ($update) {
+            successOrErrorMessage("Category has been successfully updated", 'success');
+            return redirect()->to(ADMIN_VIEW_CATEGORIES_LINK);
+          }
+        } else if (is_array($error_messages) && sizeof($error_messages) > 0) {
+          $errors = implode('<br>', $error_messages);
+          successOrErrorMessage($errors, 'error');
+        }
+  
+        $data['edit_projects'] = true;
+        $data['category_id'] = $category_id;
+        $data['category_details'] = $category_details;
+        $data['title'] = ADMIN_EDIT_CATEGORY_TITLE; 
+        echo admin_view('admin/add_categories',$data);
+      }
 
     
     public function update_status(){
