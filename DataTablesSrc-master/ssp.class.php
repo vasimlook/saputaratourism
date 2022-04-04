@@ -309,82 +309,172 @@ class SSP {
 			"data" => $resData
 		);
 	}
-         static function category_list ($request, $conn, $table, $primaryKey, $columns,$where_custom = '')
-         {                         
+	static function category_list($request, $conn, $table, $primaryKey, $columns, $where_custom = '')
+	{
 		$bindings = array();
-		$db = self::db( $conn );
-                
-                $columns_order=$columns;
+		$db = self::db($conn);
+
+		$columns_order = $columns;
 		// Build the SQL query string from the request
-                if (($request['order'][0]['column'])>0) {
-                    $columnsArray = array();                   
-                    foreach ($columns as $crow) {                       
-                        if (substr_count($crow['db'], " as ")) {
-                            $crow['db'] = explode(" as ", $crow['db'])[0];
-                        }
-                        array_push($columnsArray, $crow);
-                    }
-                    $columns_order = $columnsArray;
-                }                
-                
-		$limit = self::limit( $request, $columns );                                               
-		$order = self::order( $request, $columns_order );                               
-                
-		$where = self::filter( $request, $columns, $bindings );
-//                $where="";
-                if ($where_custom) {
-                    if ($where) {
-                        $where .= ' AND ' . $where_custom;
-                    } else {
-                        $where .= 'WHERE ' . $where_custom;
-                    }
-                } 
-                
-            $data = self::sql_exec( $db, $bindings,
-			"SELECT ".implode(", ", self::pluck($columns, 'db'))."
+		if (($request['order'][0]['column']) > 0) {
+			$columnsArray = array();
+			foreach ($columns as $crow) {
+				if (substr_count($crow['db'], " as ")) {
+					$crow['db'] = explode(" as ", $crow['db'])[0];
+				}
+				array_push($columnsArray, $crow);
+			}
+			$columns_order = $columnsArray;
+		}
+
+		$limit = self::limit($request, $columns);
+		$order = self::order($request, $columns_order);
+
+		$where = self::filter($request, $columns, $bindings);
+		//                $where="";
+		if ($where_custom) {
+			if ($where) {
+				$where .= ' AND ' . $where_custom;
+			} else {
+				$where .= 'WHERE ' . $where_custom;
+			}
+		}
+
+		$data = self::sql_exec(
+			$db,
+			$bindings,
+			"SELECT " . implode(", ", self::pluck($columns, 'db')) . "
 			FROM $table                       
 			$where
 			$order 
 			$limit"
-		); 		
+		);
 		// Data set length after filtering
-		$resFilterLength = self::sql_exec( $db, $bindings,
+		$resFilterLength = self::sql_exec(
+			$db,
+			$bindings,
 			"SELECT COUNT({$primaryKey})
 			FROM $table                       
 			$where "
 		);
 		$recordsFiltered = $resFilterLength[0][0];
 		// Total data set length
-		$resTotalLength = self::sql_exec( $db,
+		$resTotalLength = self::sql_exec(
+			$db,
 			"SELECT COUNT({$primaryKey})
 			FROM $table                       
                         "
 		);
-		$recordsTotal = $resTotalLength[0][0];                
-                $result=self::data_output($columns,$data);				
-                $resData=array();
-                if(!empty($result)){                    
-                    foreach ($result as $row){   
-						$id = $row['category_id'];  
-						$checked = '';
-						if($row['is_active'] == 1)
-							$checked = 'checked';
-					
-					    $statusCheckbox = "<input type='checkbox' ".$checked." class='category_status' data-id =".$id.">";
-				        
-						$row['is_active'] = $statusCheckbox;
-                        $row['index']='';                                                                      
-                        $row['action']="<a href='".BASE_URL_DATATABLES."edit-category/".$id."' class='btn btn-xs btn-warning'>Edit  <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
-                        array_push($resData, $row);
-                    }  
-                }
+		$recordsTotal = $resTotalLength[0][0];
+		$result = self::data_output($columns, $data);
+		$resData = array();
+		if (!empty($result)) {
+			foreach ($result as $row) {
+				$id = $row['category_id'];
+				$checked = '';
+				if ($row['is_active'] == 1)
+					$checked = 'checked';
+
+				$statusCheckbox = "<input type='checkbox' " . $checked . " class='category_status' data-id =" . $id . ">";
+
+				$row['is_active'] = $statusCheckbox;
+				$row['index'] = '';
+				$row['action'] = "<a href='" . BASE_URL_DATATABLES . "edit-category/" . $id . "' class='btn btn-xs btn-warning'>Edit  <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+				array_push($resData, $row);
+			}
+		}
 		/*
 		 * Output
 		 */
 		return array(
-			"draw" => isset ( $request['draw'] ) ? intval( $request['draw'] ) : 0,
-			"recordsTotal" => intval( $recordsTotal ),
-			"recordsFiltered" => intval( $recordsFiltered ),
+			"draw" => isset($request['draw']) ? intval($request['draw']) : 0,
+			"recordsTotal" => intval($recordsTotal),
+			"recordsFiltered" => intval($recordsFiltered),
+			"data" => $resData
+		);
+	}
+
+	static function package_list($request, $conn, $table, $primaryKey, $columns, $where_custom = '')
+	{
+		$bindings = array();
+		$db = self::db($conn);
+
+		$columns_order = $columns;
+		// Build the SQL query string from the request
+		if (($request['order'][0]['column']) > 0) {
+			$columnsArray = array();
+			foreach ($columns as $crow) {
+				if (substr_count($crow['db'], " as ")) {
+					$crow['db'] = explode(" as ", $crow['db'])[0];
+				}
+				array_push($columnsArray, $crow);
+			}
+			$columns_order = $columnsArray;
+		}
+
+		$limit = self::limit($request, $columns);
+		$order = self::order($request, $columns_order);
+
+		$where = self::filter($request, $columns, $bindings);
+		//                $where="";
+		if ($where_custom) {
+			if ($where) {
+				$where .= ' AND ' . $where_custom;
+			} else {
+				$where .= 'WHERE ' . $where_custom;
+			}
+		}
+
+		$data = self::sql_exec(
+			$db,
+			$bindings,
+			"SELECT " . implode(", ", self::pluck($columns, 'db')) . "
+			FROM $table                       
+			$where
+			$order 
+			$limit"
+		);
+		// Data set length after filtering
+		$resFilterLength = self::sql_exec(
+			$db,
+			$bindings,
+			"SELECT COUNT({$primaryKey})
+			FROM $table                       
+			$where "
+		);
+		$recordsFiltered = $resFilterLength[0][0];
+		// Total data set length
+		$resTotalLength = self::sql_exec(
+			$db,
+			"SELECT COUNT({$primaryKey})
+			FROM $table                       
+                        "
+		);
+		$recordsTotal = $resTotalLength[0][0];
+		$result = self::data_output($columns, $data);
+		$resData = array();
+		if (!empty($result)) {
+			foreach ($result as $row) {
+				$id = $row['package_id'];
+				$checked = '';
+				if ($row['is_active'] == 1)
+					$checked = 'checked';
+
+				$statusCheckbox = "<input type='checkbox' " . $checked . " class='package_status' data-id =" . $id . ">";
+
+				$row['is_active'] = $statusCheckbox;
+				$row['index'] = '';
+				$row['action'] = "<a href='" . BASE_URL_DATATABLES . "edit-package/" . $id . "' class='btn btn-xs btn-warning'>Edit  <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+				array_push($resData, $row);
+			}
+		}
+		/*
+		 * Output
+		 */
+		return array(
+			"draw" => isset($request['draw']) ? intval($request['draw']) : 0,
+			"recordsTotal" => intval($recordsTotal),
+			"recordsFiltered" => intval($recordsFiltered),
 			"data" => $resData
 		);
 	}

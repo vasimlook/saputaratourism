@@ -52,6 +52,11 @@ $routes->add('admin/view-categories', 'Categories_c::view');
 $routes->add('admin/update-status', 'Categories_c::update_status');
 $routes->add('edit-category/(:any)', 'Categories_c::edit_category/$1');
 
+$routes->add('admin/add-packages', 'Packages_c::add');
+$routes->add('admin/view-packages', 'Packages_c::view');
+$routes->add('admin/update-packages-status', 'Packages_c::update_status');
+$routes->add('edit-package/(:any)', 'Packages_c::edit_package/$1');
+
 
 
 // START CLIENT ROUTES

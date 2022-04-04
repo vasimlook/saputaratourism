@@ -137,6 +137,97 @@
     </script>
 <?php } ?>
 
+<?php if ($title == VIEW_PACKAGES) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            fill_datatable2();
+
+            function fill_datatable2() {
+                $('#package_details').DataTable({
+                    responsive: {
+                        details: {
+                            type: 'column',
+                            target: 'tr'
+                        }
+                    },
+
+                    columnDefs: [{
+                        className: 'control',
+                        orderable: false,
+                        targets: 0
+                    }],
+                    "processing": true,
+                    "serverSide": true,
+                    "pageLength": 10,
+                    "paginationType": "full_numbers",
+                    "lengthMenu": [
+                        [10, 25, 50, 100],
+                        [10, 25, 50, 100]
+                    ],
+                    "ajax": {
+                        'type': 'POST',
+                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/package_list.php' ?>",
+                    },
+                    "columns": [{
+                            "data": "index"
+                        },
+                        {
+                            "data": "package_id"
+                        },
+                        {
+                            "data": "category_id"
+                        },
+                        {
+                            "data": "package_title"
+                        },
+                        {
+                            "data": "package_duration"
+                        },
+                        {
+                            "data": "package_price"
+                        },
+                        {
+                            "data": "is_active"
+                        },
+                        {
+                            "data": "action"
+                        }
+                    ]
+                });
+            }
+
+            $(document).on('change', '.package_status', function(res) {
+
+                var package_status = 0;
+                var package_id = $(this).attr('data-id');              
+                if ($(this).prop('checked') == true) {
+                    package_status = 1;
+                }
+
+                var data = {
+                    package_status,
+                    package_id
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo ADMIN_UPDATE_PACKAGES_STATUS ?>",
+                    data: data,
+                    success: function(res) {
+                        var res = $.parseJSON(res);
+
+                        var message  = (package_status == 1) ? 'Package activated' : 'Package deactivated';
+                        if (res.success == 'success' ) {
+                            alert(message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+<?php } ?>
+
 </body>
 
 </html>
