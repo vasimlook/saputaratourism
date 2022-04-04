@@ -6,20 +6,18 @@ if (isset($edit_packages) && $edit_packages == true) {
     $edit_mode = true;
 }
 
-$pageTitle = "Create Package";
-$ActionLink = ADMIN_ADD_PACKAGES_LINK;
+$pageTitle = "Create Ads Package";
+$ActionLink = ADMIN_ADD_ADS_PACKAGES_LINK;
 
 $package_title = "";
 $package_price = "";
 $package_duration = "";
 $is_active = "";
-$package_category  = 0;
 
 if (isset($package_details) && (is_array($package_details) && sizeof($package_details) > 0)) {
     $package_title = (isset($package_details['package_title'])) ? $package_details['package_title'] : '';   
     $package_price = (isset($package_details['package_price'])) ? $package_details['package_price'] : '';   
-    $package_duration = (isset($package_details['package_duration'])) ? $package_details['package_duration'] : '';   
-    $package_category = (isset($package_details['category_id'])) ? $package_details['category_id'] : '';   
+    $package_duration = (isset($package_details['package_duration'])) ? $package_details['package_duration'] : '';       
     
 
     if (isset($package_details['is_active'])) {
@@ -30,22 +28,8 @@ if (isset($package_details) && (is_array($package_details) && sizeof($package_de
 }
 
 if ($edit_mode) {
-    $ActionLink = ADMIN_EDIT_PACKAGES_LINK . '/' . $package_id;
-    $pageTitle = "Edit Package";     
-}
-
-$category_options = '<option value = 0>Select package category</option>';
-
-if(isset($categories) && is_array($categories) && sizeof($categories) > 0){
-    foreach($categories as $key => $catgory){
-        $category_name = $catgory['category_title'];
-        $category_id = $catgory['category_id'];
-
-        $selected = ($package_category == $category_id) ? 'selected'  : '';
-
-        $category_options .= '<option '.$selected.' value='.$category_id.'>'.$category_name.'</option>';
-
-    }
+    $ActionLink = ADMIN_EDIT_ADS_PACKAGES_LINK . '/' . $package_id;
+    $pageTitle = "Edit Ads Package";     
 }
 
 ?>
@@ -78,23 +62,6 @@ if(isset($categories) && is_array($categories) && sizeof($categories) > 0){
                                         <div class="form-group">
                                             <div class="form-control-wrap">
                                                 <input type="text" value="<?= $package_title ?>" class="form-control" name="package_title" id="package_title" placeholder="Enter package title" required="" autocomplete="off">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>  
-                                
-                                <div class="row g-3 align-center">
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label class="form-label float-right" for="category_id">Package Categories:</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <div class="form-control-wrap">
-                                                <select class="form-control" id="category_id" name="category_id">
-                                                    <?= $category_options ?>
-                                                </select>
                                             </div>
                                         </div>
                                     </div>

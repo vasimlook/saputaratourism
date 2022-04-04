@@ -57,6 +57,11 @@ $routes->add('admin/view-packages', 'Packages_c::view');
 $routes->add('admin/update-packages-status', 'Packages_c::update_status');
 $routes->add('edit-package/(:any)', 'Packages_c::edit_package/$1');
 
+$routes->add('admin/add-ads-packages', 'AdsPackages_c::add');
+$routes->add('admin/view-ads-packages', 'AdsPackages_c::view');
+$routes->add('admin/update-ads-packages-status', 'AdsPackages_c::update_status');
+$routes->add('edit-ads-package/(:any)', 'AdsPackages_c::edit_ads_package/$1');
+
 
 
 // START CLIENT ROUTES
