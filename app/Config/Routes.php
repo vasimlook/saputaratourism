@@ -62,6 +62,11 @@ $routes->add('admin/view-ads-packages', 'AdsPackages_c::view');
 $routes->add('admin/update-ads-packages-status', 'AdsPackages_c::update_status');
 $routes->add('edit-ads-package/(:any)', 'AdsPackages_c::edit_ads_package/$1');
 
+$routes->add('admin/add-slider', 'Slider_c::add');
+$routes->add('admin/view-slider', 'Slider_c::view');
+$routes->add('admin/update-slider-status', 'Slider_c::update_status');
+$routes->add('edit-slider/(:any)', 'Slider_c::edit_slider/$1');
+
 
 
 // START CLIENT ROUTES

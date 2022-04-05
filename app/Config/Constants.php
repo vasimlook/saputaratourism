@@ -106,6 +106,10 @@ define('ADD_ADS_PACKAGES', 'Add Ads Packages');
 define('VIEW_ADS_PACKAGES', 'View Ads Packages');
 define('ADMIN_EDIT_ADS_PACKAGES_TITLE', 'Edit Ads Packages');
 
+define('ADD_SLIDER', 'Add slider');
+define('VIEW_SLIDER', 'View slider');
+define('ADMIN_EDIT_SLIDER_TITLE', 'Edit slider');
+
 
 // START ADMIN LINK
 define('ADMIN_LOGIN_LINK', BASE_URL_CI.'/admin/login');
@@ -126,6 +130,11 @@ define('ADMIN_ADD_ADS_PACKAGES_LINK', BASE_URL_CI.'/admin/add-ads-packages');
 define('ADMIN_VIEW_ADS_PACKAGES_LINK', BASE_URL_CI.'/admin/view-ads-packages');
 define('ADMIN_UPDATE_ADS_PACKAGES_STATUS', BASE_URL_CI.'/admin/update-ads-packages-status');
 define('ADMIN_EDIT_ADS_PACKAGES_LINK', BASE_URL_CI.'/edit-ads-package');
+
+define('ADMIN_ADD_SLIDER_LINK', BASE_URL_CI.'/admin/add-slider');
+define('ADMIN_VIEW_SLIDER_LINK', BASE_URL_CI.'/admin/view-slider');
+define('ADMIN_UPDATE_SLIDER_STATUS', BASE_URL_CI.'/admin/update-slider-status');
+define('ADMIN_EDIT_SLIDER_LINK', BASE_URL_CI.'/edit-slider');
 
 
 // START CLIENT TITLE

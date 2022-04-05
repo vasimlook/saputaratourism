@@ -316,6 +316,94 @@
     </script>
 <?php } ?>
 
+<?php if ($title == VIEW_SLIDER) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            fill_datatable3();
+
+            function fill_datatable3() {
+                $('#slider_details').DataTable({
+                    responsive: {
+                        details: {
+                            type: 'column',
+                            target: 'tr'
+                        }
+                    },
+
+                    columnDefs: [{
+                        className: 'control',
+                        orderable: false,
+                        targets: 0
+                    }],
+                    "processing": true,
+                    "serverSide": true,
+                    "pageLength": 10,
+                    "paginationType": "full_numbers",
+                    "lengthMenu": [
+                        [10, 25, 50, 100],
+                        [10, 25, 50, 100]
+                    ],
+                    "ajax": {
+                        'type': 'POST',
+                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/slider_list.php' ?>",
+                    },
+                    "columns": [{
+                            "data": "index"
+                        },
+                        {
+                            "data": "slider_id"
+                        },
+                        {
+                            "data": "slider_title"
+                        },
+                        {
+                            "data": "slider_image"
+                        },
+                        {
+                            "data": "slider_position"
+                        },
+                        {
+                            "data": "is_active"
+                        },
+                        {
+                            "data": "action"
+                        }
+                    ]
+                });
+            }
+
+            $(document).on('change', '.slider_status', function(res) {
+
+                var slider_status = 0;
+                var slider_id = $(this).attr('data-id');              
+                if ($(this).prop('checked') == true) {
+                    slider_status = 1;
+                }
+
+                var data = {
+                    slider_status,
+                    slider_id
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo ADMIN_UPDATE_SLIDER_STATUS ?>",
+                    data: data,
+                    success: function(res) {
+                        var res = $.parseJSON(res);
+
+                        var message  = (slider_status == 1) ? 'Slider activated' : 'Slider deactivated';
+                        if (res.success == 'success' ) {
+                            alert(message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+<?php } ?>
+
 </body>
 
 </html>
