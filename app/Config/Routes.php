@@ -67,6 +67,11 @@ $routes->add('admin/view-slider', 'Slider_c::view');
 $routes->add('admin/update-slider-status', 'Slider_c::update_status');
 $routes->add('edit-slider/(:any)', 'Slider_c::edit_slider/$1');
 
+$routes->add('admin/add-hotel-facility', 'HotelFacility_c::add');
+$routes->add('admin/view-hotel-facility', 'HotelFacility_c::view');
+$routes->add('admin/update-hotel-facility-status', 'HotelFacility_c::update_status');
+$routes->add('edit-hotel-facility/(:any)', 'HotelFacility_c::edit_facility/$1');
+
 
 
 // START CLIENT ROUTES

@@ -110,6 +110,10 @@ define('ADD_SLIDER', 'Add slider');
 define('VIEW_SLIDER', 'View slider');
 define('ADMIN_EDIT_SLIDER_TITLE', 'Edit slider');
 
+define('ADD_HOTEL_FACILITY', 'Add hotel facility');
+define('VIEW_HOTEL_FACILITY', 'View hotel facility');
+define('ADMIN_EDIT_HOTEL_FACILITY_TITLE', 'Edit hotel facility');
+
 
 // START ADMIN LINK
 define('ADMIN_LOGIN_LINK', BASE_URL_CI.'/admin/login');
@@ -135,6 +139,11 @@ define('ADMIN_ADD_SLIDER_LINK', BASE_URL_CI.'/admin/add-slider');
 define('ADMIN_VIEW_SLIDER_LINK', BASE_URL_CI.'/admin/view-slider');
 define('ADMIN_UPDATE_SLIDER_STATUS', BASE_URL_CI.'/admin/update-slider-status');
 define('ADMIN_EDIT_SLIDER_LINK', BASE_URL_CI.'/edit-slider');
+
+define('ADMIN_ADD_HOTEL_FACILITY_LINK', BASE_URL_CI.'/admin/add-hotel-facility');
+define('ADMIN_VIEW_HOTEL_FACILITY_LINK', BASE_URL_CI.'/admin/view-hotel-facility');
+define('ADMIN_UPDATE_HOTEL_FACILITY_STATUS', BASE_URL_CI.'/admin/update-hotel-facility-status');
+define('ADMIN_EDIT_HOTEL_FACILITY_LINK', BASE_URL_CI.'/edit-hotel-facility');
 
 
 // START CLIENT TITLE

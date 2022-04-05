@@ -404,6 +404,94 @@
     </script>
 <?php } ?>
 
+<?php if ($title == VIEW_HOTEL_FACILITY) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            fill_datatable4();
+
+            function fill_datatable4() {
+                $('#hotel_facility_details').DataTable({
+                    responsive: {
+                        details: {
+                            type: 'column',
+                            target: 'tr'
+                        }
+                    },
+
+                    columnDefs: [{
+                        className: 'control',
+                        orderable: false,
+                        targets: 0
+                    }],
+                    "processing": true,
+                    "serverSide": true,
+                    "pageLength": 10,
+                    "paginationType": "full_numbers",
+                    "lengthMenu": [
+                        [10, 25, 50, 100],
+                        [10, 25, 50, 100]
+                    ],
+                    "ajax": {
+                        'type': 'POST',
+                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/hotel_facility_list.php' ?>",
+                    },
+                    "columns": [{
+                            "data": "index"
+                        },
+                        {
+                            "data": "facility_id"
+                        },
+                        {
+                            "data": "facility_title"
+                        },
+                        {
+                            "data": "facility_descriptions"
+                        },
+                        {
+                            "data": "icon"
+                        },
+                        {
+                            "data": "is_active"
+                        },
+                        {
+                            "data": "action"
+                        }
+                    ]
+                });
+            }
+
+            $(document).on('change', '.hotel_facility_status', function(res) {
+
+                var facility_status = 0;
+                var facility_id = $(this).attr('data-id');              
+                if ($(this).prop('checked') == true) {
+                    facility_status = 1;
+                }
+
+                var data = {
+                    facility_status,
+                    facility_id
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo ADMIN_UPDATE_HOTEL_FACILITY_STATUS ?>",
+                    data: data,
+                    success: function(res) {
+                        var res = $.parseJSON(res);
+
+                        var message  = (facility_status == 1) ? 'Facility activated' : 'Facility deactivated';
+                        if (res.success == 'success' ) {
+                            alert(message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+<?php } ?>
+
 </body>
 
 </html>
