@@ -114,6 +114,10 @@ define('ADD_HOTEL_FACILITY', 'Add hotel facility');
 define('VIEW_HOTEL_FACILITY', 'View hotel facility');
 define('ADMIN_EDIT_HOTEL_FACILITY_TITLE', 'Edit hotel facility');
 
+define('ADD_HOTEL', 'Add Hotel');
+define('VIEW_HOTEL', 'View Hotel');
+define('ADMIN_EDIT_HOTEL_TITLE', 'Edit Hotel');
+
 
 // START ADMIN LINK
 define('ADMIN_LOGIN_LINK', BASE_URL_CI.'/admin/login');
@@ -144,6 +148,11 @@ define('ADMIN_ADD_HOTEL_FACILITY_LINK', BASE_URL_CI.'/admin/add-hotel-facility')
 define('ADMIN_VIEW_HOTEL_FACILITY_LINK', BASE_URL_CI.'/admin/view-hotel-facility');
 define('ADMIN_UPDATE_HOTEL_FACILITY_STATUS', BASE_URL_CI.'/admin/update-hotel-facility-status');
 define('ADMIN_EDIT_HOTEL_FACILITY_LINK', BASE_URL_CI.'/edit-hotel-facility');
+
+define('ADMIN_ADD_HOTEL_LINK', BASE_URL_CI.'/admin/add-hotel');
+define('ADMIN_VIEW_HOTEL_LINK', BASE_URL_CI.'/admin/view-hotel');
+define('ADMIN_UPDATE_HOTEL_STATUS', BASE_URL_CI.'/admin/update-hotel-status');
+define('ADMIN_EDIT_HOTEL_LINK', BASE_URL_CI.'/edit-hotel');
 
 
 // START CLIENT TITLE

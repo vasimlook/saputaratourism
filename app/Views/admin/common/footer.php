@@ -492,6 +492,103 @@
     </script>
 <?php } ?>
 
+<?php if ($title == VIEW_HOTEL) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            fill_datatable5();
+
+            function fill_datatable5() {
+                $('#hotel_details').DataTable({
+                    responsive: {
+                        details: {
+                            type: 'column',
+                            target: 'tr'
+                        }
+                    },
+
+                    columnDefs: [{
+                        className: 'control',
+                        orderable: false,
+                        targets: 0
+                    }],
+                    "processing": true,
+                    "serverSide": true,
+                    "pageLength": 10,
+                    "paginationType": "full_numbers",
+                    "lengthMenu": [
+                        [10, 25, 50, 100],
+                        [10, 25, 50, 100]
+                    ],
+                    "ajax": {
+                        'type': 'POST',
+                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/hotel_list.php' ?>",
+                    },
+                    "columns": [{
+                            "data": "index"
+                        },
+                        {
+                            "data": "hotel_id"
+                        },
+                        {
+                            "data": "client_id"
+                        },
+                        {
+                            "data": "hotel_main_image"
+                        },
+                        {
+                            "data": "hotel_title"
+                        },
+                        {
+                            "data": "hotel_descriptions"
+                        },
+                        {
+                            "data": "top_package_id"
+                        },
+                        {
+                            "data": "ads_package_id"
+                        },
+                        {
+                            "data": "is_active"
+                        },
+                        {
+                            "data": "action"
+                        }
+                    ]
+                });
+            }
+
+            $(document).on('change', '.hotel_status', function(res) {
+
+                var hotel_status = 0;
+                var hotel_id = $(this).attr('data-id');              
+                if ($(this).prop('checked') == true) {
+                    hotel_status = 1;
+                }
+
+                var data = {
+                    hotel_status,
+                    hotel_id
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo ADMIN_UPDATE_HOTEL_STATUS ?>",
+                    data: data,
+                    success: function(res) {
+                        var res = $.parseJSON(res);
+
+                        var message  = (hotel_status == 1) ? 'Hotel activated' : 'Hotel deactivated';
+                        if (res.success == 'success' ) {
+                            alert(message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+<?php } ?>
+
 </body>
 
 </html>
