@@ -87,6 +87,48 @@ if(isset($adsPackages) && is_array($adsPackages) && sizeof($adsPackages) > 0){
     }
 }
 
+$otherImageHtml = '';
+
+if(isset($hotel_details['other_images']) && is_array(($hotel_details['other_images'])) && sizeof($hotel_details['other_images']) > 0){
+    foreach($hotel_details['other_images'] as $key => $other_image){
+        $imageName = $other_image['image_path'];
+        $imageId = $other_image['image_id'];      
+        $imagePATH = UPLOAD_FOLDER.'original/'.$imageName;     
+
+        $otherImageHtml .= '<div class="outer col-md-2" id="img_'.$imageId.'">
+                                <ion-card class="inner" *ngFor="let i of images">
+                                    <img src="'.$imagePATH.'" />
+                                    <span  class="close-icon delete-image" data-id="'.$imageId.'">X</span>
+                                </ion-card>
+                            </div> ';        }
+}
+
+echo " <style>
+
+    .close-icon {
+      position: absolute;
+      right: -8rem;
+      margin-top: -10rem;
+      color: red;
+      font-size: 18px;
+     }
+    
+    .inner {
+      position: relative;
+      /* background: #ccc; */
+      height: 40px;
+      width: 100%;
+      margin: 5px;
+    }
+    .close-icon:hover{
+      cursor: pointer;
+    }
+    .outer {
+      height: 90px;
+      width: 100px;
+    }
+    </style>";
+
 ?>
 
 <div class="nk-content">
@@ -171,24 +213,47 @@ if(isset($adsPackages) && is_array($adsPackages) && sizeof($adsPackages) > 0){
                                 </div>
                                 
                                 <div class="row g-3 align-center">
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                        <label class="form-label float-right" for="hotel_main_image">Hotel Image: </label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                        <div class="form-control-wrap">
-                                            <input type="file" accept="image/*" name="hotel_main_image" id="hotel_main_image" <?= ($imageRequired) ? "required" : "" ?>>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-label float-right" for="hotel_main_image">Hotel Image: </label>
                                         </div>
-                                        <?php if ($edit_mode && $hotelImage != '') : ?>
-                                            <div style="margin-top: 10px;">
-                                                <img src="<?= UPLOAD_FOLDER . 'original/' . $hotelImage ?>">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="file" accept="image/*" name="hotel_main_image" id="hotel_main_image" <?= ($imageRequired) ? "required" : "" ?>>
                                             </div>
-                                        <?php endif; ?>
+                                            <?php if ($edit_mode && $hotelImage != '') : ?>
+                                                <div style="margin-top: 10px;">
+                                                    <img src="<?= UPLOAD_FOLDER . 'original/' . $hotelImage ?>">
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+
+                                <div class="row g-3 align-center">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-label float-right" for="other_images">Other images: </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="file" name="other_hotel_images[]" id="other_hotel_images" accept="image/*" multiple>
+                                            </div>
+
+                                            <?php if ($edit_mode && $otherImageHtml != '') : ?>                                           
+                                                <div class="form-group bordered-group">
+                                                    <div class="row">
+                                                        <?=  $otherImageHtml ?>                                                  
+                                                    </div>
+                                                </div>                                           
+                                            <?php endif; ?>    
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="row g-3 align-center">
                                         <div class="col-lg-4">

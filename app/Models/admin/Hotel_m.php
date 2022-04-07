@@ -96,6 +96,27 @@ class Hotel_m extends Model
         $cat_id = (int)$params['cat_id'];
         $result = $this->db->query("SELECT * FROM saputara_facility_packages WHERE category_id = {$cat_id}");
         return $result->getResultArray();
-}
+    }
+
+    public function add_hotel_images($params) {       
+        $builder = $this->db->table('saputara_hotel_images');
+        $builder->insert($params);
+        return $this->db->insertID();
+    }
+
+    public function get_hotel_images($hotelId){
+        $images = array();
+        $hotelId = (int)$hotelId;
+
+        if($hotelId === 0)
+            return $images;
+         
+        $image = $this->db->query("SELECT *
+                                        FROM  saputara_hotel_images
+                                    WHERE hotel_id = {$hotelId} ");
+        $hotel_images = $image->getResultArray();      
+
+        return $hotel_images;  
+    }
     
 }

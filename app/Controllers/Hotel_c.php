@@ -74,7 +74,18 @@ class Hotel_c extends BaseController{
     
           $hotelId = $this->Hotel_m->create_hotel($hotel_details);
     
-          if ($hotelId) {              
+          if ($hotelId) {   
+            
+            if (($_FILES['other_hotel_images']['name'][0]) != '') {
+              $other_hotel_images = multiImageUpload('other_hotel_images');
+              foreach ($other_hotel_images as $poi) {
+                  $params = array();
+                  $params['hotel_id'] = $hotelId;
+                  $params['image_path'] = $poi[2]['file_name'];
+                  $params['is_active'] = 1;
+                  $this->Hotel_m->add_hotel_images($params);
+              }
+           }
     
             successOrErrorMessage("Hotel has been successfully created", 'success');
             return redirect()->to(ADMIN_VIEW_HOTEL_LINK);
@@ -160,10 +171,16 @@ class Hotel_c extends BaseController{
     public function edit_hotel($hotel_id){
         helper('form');  
         $hotel_details = $this->Hotel_m->get_hotel_details($hotel_id);
+        $hotel_images = $this->Hotel_m->get_hotel_images($hotel_id);
         
         $has_error = false;
         $error_messages  = array();
         $submitForm = false;
+
+        if(is_array($hotel_details) && sizeof($hotel_details) > 0){          
+  
+          $hotel_details['other_images'] = $hotel_images;
+        }
       
        
   
@@ -193,6 +210,17 @@ class Hotel_c extends BaseController{
           $update = $this->Hotel_m->update_hotel($hotel_details,$hotel_id);
     
           if ($update) {
+            if (($_FILES['other_hotel_images']['name'][0]) != '') {
+              $other_hotel_images = multiImageUpload('other_hotel_images');
+              foreach ($other_hotel_images as $poi) {
+                  $params = array();
+                  $params['hotel_id'] = $hotel_id;
+                  $params['image_path'] = $poi[2]['file_name'];
+                  $params['is_active'] = 1;
+                  $this->Hotel_m->add_hotel_images($params);
+              }
+           }
+
             successOrErrorMessage("Hotel has been successfully updated", 'success');
             return redirect()->to(ADMIN_VIEW_HOTEL_LINK);
           }
