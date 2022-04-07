@@ -589,17 +589,37 @@
     </script>
 <?php } ?>
 
-<?php if ($title == ADD_HOTEL) {
+<?php if ($title == ADD_HOTEL || $title == ADMIN_EDIT_HOTEL_TITLE ) {
 ?>
     <script nonce='S51U26wMQz' type="text/javascript">
         $(document).ready(function() {
+            var edit_mode = "<?php echo $edit_hotel ?>";    
+            var top_package_id = "<?php echo $top_package_id ?>"; 
+
+            if(edit_mode){
+                var cat_id = $("#main_category").val();
+                load_packages(cat_id,function(){
+                    
+                    $("#top_package_id").val(top_package_id)
+                });
+            }           
+            
+
             $('#main_category').on('change', function() {
-                var cat_id = $(this).val();
+                var cat_id = $(this).val();        
+                
+                load_packages(cat_id,function(){
+
+                });
+               
+            });
+
+            function load_packages(cat_id,callback){
                 $.ajax({
                     type: "POST",
                     url: "<?php echo ADMIN_LOAD_HOTEL_PACKAGE_LINK ?>",
                     data: {
-                        'cat_id': cat_id
+                        'cat_id': cat_id,                        
                     },
                     success: function(res) {
                         var data = jQuery.parseJSON(res);
@@ -608,9 +628,11 @@
                         $.each(data.package, function(index, value) {
                             $("#top_package_id").append(new Option(value.package_title, value.package_id));
                         });
+
+                        callback();
                     }
                 });
-            });
+            }
 
         });
     </script>

@@ -106,11 +106,19 @@ class Hotel_c extends BaseController{
 
     function validate_hotel($hotelData){
         $hotel_title = trim($hotelData['hotel_title']);
+        $main_category = (int)$hotelData['main_category'];
         $hotel_descriptions = trim($hotelData['hotel_descriptions']);
         $client_id = (int)$hotelData['client_id'];
 
         $has_error = false;
         $hotel_details = array();  
+
+        if ($main_category === 0) {
+          $has_error = true;
+          $error_messages[] = "Please select main category!";
+        } else {
+          $hotel_details['main_category'] = $main_category;
+        }
     
     
         if (empty($hotel_title) || $hotel_title == '') {
@@ -197,7 +205,9 @@ class Hotel_c extends BaseController{
         $adsPackages  = $this->Hotel_m->get_ads_packges();
         $categories =  $this->Hotel_m->get_categories();    
 
+        $top_package_id = (isset($hotel_details['top_package_id'])) ?(int)$hotel_details['top_package_id'] : 0;
         $data['categories'] = $categories;
+        $data['top_package_id'] = $top_package_id;
         $data['clients'] = $clients;
         $data['adsPackages'] = $adsPackages;  
         $data['edit_hotel'] = true;        

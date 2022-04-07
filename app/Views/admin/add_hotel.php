@@ -17,12 +17,15 @@ $hotel_descriptions = "";
 $is_active = "";
 $client_id  = 0;
 $ads_package_id  = 0;
+$main_category = 0;
 
 if (isset($hotel_details) && (is_array($hotel_details) && sizeof($hotel_details) > 0)) {
     $hotel_title = (isset($hotel_details['hotel_title'])) ? $hotel_details['hotel_title'] : '';   
     $hotel_descriptions = (isset($hotel_details['hotel_descriptions'])) ? $hotel_details['hotel_descriptions'] : '';   
-    $ads_package_id = (isset($hotel_details['ads_package_id'])) ? (int)$hotel_details['ads_package_id'] : '';   
-    $hotel_client_id = (isset($hotel_details['client_id'])) ? (int)$hotel_details['client_id'] : '';   
+    $ads_package_id = (isset($hotel_details['ads_package_id'])) ? (int)$hotel_details['ads_package_id'] : 0;        
+    $hotel_client_id = (isset($hotel_details['client_id'])) ? (int)$hotel_details['client_id'] : 0;   
+    $main_category = (isset($hotel_details['main_category'])) ? (int)$hotel_details['main_category'] : 0;   
+  
     
     
 
@@ -51,9 +54,9 @@ $ads_package_options = '<option value = 0>Select ads package</option>';
 if(isset($categories) && is_array($categories) && sizeof($categories) > 0){
     foreach($categories as $key => $catgory){
         $category_name = $catgory['category_title'];
-        $category_id = $catgory['category_id'];
+        $category_id = $catgory['category_id'];        
 
-        $selected = ($package_category == $category_id) ? 'selected'  : '';
+        $selected = ($main_category == $category_id) ? 'selected'  : '';
 
         $category_options .= '<option '.$selected.' value='.$category_id.'>'.$category_name.'</option>';
 
