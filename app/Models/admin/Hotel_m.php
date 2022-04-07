@@ -118,5 +118,18 @@ class Hotel_m extends Model
 
         return $hotel_images;  
     }
+
+    public function delete_hotel_image($hotelId){
+        $hotelId = (int)$hotelId;
+
+        if($hotelId === 0)
+            return false;
+        
+        $builder = $this->db->table('saputara_hotel_images');
+        $builder->where('image_id', $hotelId);
+        
+        $builder->delete();     
+        return true;
+    }
     
 }

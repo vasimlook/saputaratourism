@@ -273,5 +273,22 @@ class Hotel_c extends BaseController{
         echo json_encode($result);
       }
     }
+
+    public function delete_hotel_image(){
+      $imageId = (int)$_REQUEST['image_id'];
+      $delete =  $this->Hotel_m->delete_hotel_image($imageId);
+  
+      if($delete){
+        $output = array(
+          'success' => 'success'
+        );
+      }else{
+        $output = array(
+          'error' => true
+        );
+      }
+  
+      echo json_encode($output);
+    }
 }
 ?>

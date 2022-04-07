@@ -129,6 +129,7 @@ define('ADMIN_VIEW_CATEGORIES_LINK', BASE_URL_CI.'/admin/view-categories');
 define('ADMIN_UPDATE_CATEGORY_STATUS', BASE_URL_CI.'/admin/update-status');
 define('ADMIN_EDIT_CATEGORY_LINK', BASE_URL_CI.'/edit-category');
 define('ADMIN_LOAD_HOTEL_PACKAGE_LINK', BASE_URL_CI.'/admin/load-hotel-package');
+define('ADMIN_DELETE_HOTEL_IMAGE', BASE_URL_CI.'/admin/delete-hotel-image');
 
 define('ADMIN_ADD_PACKAGES_LINK', BASE_URL_CI.'/admin/add-packages');
 define('ADMIN_VIEW_PACKAGES_LINK', BASE_URL_CI.'/admin/view-packages');
