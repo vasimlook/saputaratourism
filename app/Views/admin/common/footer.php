@@ -109,7 +109,7 @@
             $(document).on('change', '.category_status', function(res) {
 
                 var category_status = 0;
-                var category_id = $(this).attr('data-id');              
+                var category_id = $(this).attr('data-id');
                 if ($(this).prop('checked') == true) {
                     category_status = 1;
                 }
@@ -126,8 +126,8 @@
                     success: function(res) {
                         var res = $.parseJSON(res);
 
-                        var message  = (category_status == 1) ? 'Category activated' : 'Category deactivated';
-                        if (res.success == 'success' ) {
+                        var message = (category_status == 1) ? 'Category activated' : 'Category deactivated';
+                        if (res.success == 'success') {
                             alert(message);
                         }
                     }
@@ -200,7 +200,7 @@
             $(document).on('change', '.package_status', function(res) {
 
                 var package_status = 0;
-                var package_id = $(this).attr('data-id');              
+                var package_id = $(this).attr('data-id');
                 if ($(this).prop('checked') == true) {
                     package_status = 1;
                 }
@@ -217,8 +217,8 @@
                     success: function(res) {
                         var res = $.parseJSON(res);
 
-                        var message  = (package_status == 1) ? 'Package activated' : 'Package deactivated';
-                        if (res.success == 'success' ) {
+                        var message = (package_status == 1) ? 'Package activated' : 'Package deactivated';
+                        if (res.success == 'success') {
                             alert(message);
                         }
                     }
@@ -288,7 +288,7 @@
             $(document).on('change', '.package_status', function(res) {
 
                 var package_status = 0;
-                var package_id = $(this).attr('data-id');              
+                var package_id = $(this).attr('data-id');
                 if ($(this).prop('checked') == true) {
                     package_status = 1;
                 }
@@ -305,8 +305,8 @@
                     success: function(res) {
                         var res = $.parseJSON(res);
 
-                        var message  = (package_status == 1) ? 'Package activated' : 'Package deactivated';
-                        if (res.success == 'success' ) {
+                        var message = (package_status == 1) ? 'Package activated' : 'Package deactivated';
+                        if (res.success == 'success') {
                             alert(message);
                         }
                     }
@@ -376,7 +376,7 @@
             $(document).on('change', '.slider_status', function(res) {
 
                 var slider_status = 0;
-                var slider_id = $(this).attr('data-id');              
+                var slider_id = $(this).attr('data-id');
                 if ($(this).prop('checked') == true) {
                     slider_status = 1;
                 }
@@ -393,8 +393,8 @@
                     success: function(res) {
                         var res = $.parseJSON(res);
 
-                        var message  = (slider_status == 1) ? 'Slider activated' : 'Slider deactivated';
-                        if (res.success == 'success' ) {
+                        var message = (slider_status == 1) ? 'Slider activated' : 'Slider deactivated';
+                        if (res.success == 'success') {
                             alert(message);
                         }
                     }
@@ -464,7 +464,7 @@
             $(document).on('change', '.hotel_facility_status', function(res) {
 
                 var facility_status = 0;
-                var facility_id = $(this).attr('data-id');              
+                var facility_id = $(this).attr('data-id');
                 if ($(this).prop('checked') == true) {
                     facility_status = 1;
                 }
@@ -481,8 +481,8 @@
                     success: function(res) {
                         var res = $.parseJSON(res);
 
-                        var message  = (facility_status == 1) ? 'Facility activated' : 'Facility deactivated';
-                        if (res.success == 'success' ) {
+                        var message = (facility_status == 1) ? 'Facility activated' : 'Facility deactivated';
+                        if (res.success == 'success') {
                             alert(message);
                         }
                     }
@@ -561,7 +561,7 @@
             $(document).on('change', '.hotel_status', function(res) {
 
                 var hotel_status = 0;
-                var hotel_id = $(this).attr('data-id');              
+                var hotel_id = $(this).attr('data-id');
                 if ($(this).prop('checked') == true) {
                     hotel_status = 1;
                 }
@@ -578,13 +578,40 @@
                     success: function(res) {
                         var res = $.parseJSON(res);
 
-                        var message  = (hotel_status == 1) ? 'Hotel activated' : 'Hotel deactivated';
-                        if (res.success == 'success' ) {
+                        var message = (hotel_status == 1) ? 'Hotel activated' : 'Hotel deactivated';
+                        if (res.success == 'success') {
                             alert(message);
                         }
                     }
                 });
             });
+        });
+    </script>
+<?php } ?>
+
+<?php if ($title == ADD_HOTEL) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            $('#main_category').on('change', function() {
+                var cat_id = $(this).val();
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo ADMIN_LOAD_HOTEL_PACKAGE_LINK ?>",
+                    data: {
+                        'cat_id': cat_id
+                    },
+                    success: function(res) {
+                        var data = jQuery.parseJSON(res);
+                        $("#top_package_id").empty();
+                        $("#top_package_id").append(new Option("Select Top Package", 0));
+                        $.each(data.package, function(index, value) {
+                            $("#top_package_id").append(new Option(value.package_title, value.package_id));
+                        });
+                    }
+                });
+            });
+
         });
     </script>
 <?php } ?>
