@@ -186,6 +186,23 @@ if(isset($adsPackages) && is_array($adsPackages) && sizeof($adsPackages) > 0){
                                     </div>
                                 </div>
                             </div>
+
+                                <div class="row g-3 align-center">
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="form-label float-right" for="top_package_id">Top package:</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <div class="form-control-wrap">
+                                                    <select class="form-control" id="top_package_id" name="top_package_id">
+                                                        
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>            
                                 
                                 <div class="row g-3 align-center">
                                     <div class="col-lg-4">

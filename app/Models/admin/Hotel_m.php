@@ -91,5 +91,11 @@ class Hotel_m extends Model
 
         return $category_details;  
     }
+
+    public function load_package($params){
+        $cat_id = (int)$params['cat_id'];
+        $result = $this->db->query("SELECT * FROM saputara_facility_packages WHERE category_id = {$cat_id}");
+        return $result->getResultArray();
+}
     
 }

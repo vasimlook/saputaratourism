@@ -140,6 +140,7 @@ class Hotel_c extends BaseController{
         }
 
         $hotel_details['ads_package_id'] = (int)$hotelData['ads_package_id'];
+        $hotel_details['top_package_id'] = (int)$hotelData['top_package_id'];
     
         return array(
           'has_error' => $has_error,
@@ -224,6 +225,15 @@ class Hotel_c extends BaseController{
     
         echo json_encode($output);
         
+    }
+
+    public function load_package(){
+      if($_REQUEST['cat_id']){            
+        $package = $this->Hotel_m->load_package($_POST);			           
+        $result=array();
+        $result['package']=$package; 			                    
+        echo json_encode($result);
       }
+    }
 }
 ?>
