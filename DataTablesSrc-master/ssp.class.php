@@ -804,6 +804,19 @@ class SSP {
 				$hotel_main_image = UPLOAD_FOLDER.'original/'.$row['hotel_main_image'];
 				$row['hotel_main_image'] = "<img style='width:40%' src='".$hotel_main_image."'>";
 
+				$client_id = (int)$row['client_id'];
+
+				$client_details = self::sql_exec($db, "SELECT * FROM client WHERE client_user_id = {$client_id}");				
+				$client_name = "";
+
+				if(!empty($client_details)){
+					$client_details = current($client_details);
+					$client_name = $client_details['user_firstname'].' '.$client_details['user_lastname'];
+				}
+
+				$row['client_id'] = $client_name;
+				
+
 				$checked = '';
 				if ($row['is_active'] == 1)
 					$checked = 'checked';
