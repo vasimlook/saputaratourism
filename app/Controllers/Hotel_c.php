@@ -87,9 +87,11 @@ class Hotel_c extends BaseController{
         helper('form');
 
         $clients =  $this->Hotel_m->get_clients();            
-        $adsPackages  = $this->Hotel_m->get_ads_packges();    
+        $adsPackages  = $this->Hotel_m->get_ads_packges();
+        $categories =  $this->Hotel_m->get_categories();    
     
         $data['clients'] = $clients;        
+        $data['categories'] = $categories;        
         $data['adsPackages'] = $adsPackages;
         $data['hotel_details'] = $hotel_details;
         $data['title'] = ADD_HOTEL; 
@@ -192,6 +194,9 @@ class Hotel_c extends BaseController{
 
         $clients =  $this->Hotel_m->get_clients();          
         $adsPackages  = $this->Hotel_m->get_ads_packges();
+        $categories =  $this->Hotel_m->get_categories();    
+
+        $data['categories'] = $categories;
         $data['clients'] = $clients;
         $data['adsPackages'] = $adsPackages;  
         $data['edit_hotel'] = true;        

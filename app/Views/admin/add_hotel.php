@@ -43,8 +43,22 @@ if ($edit_mode) {
     }
 }
 
+$category_options = '<option value = 0>Select Category</option>';
 $client_options = '<option value = 0>Select client</option>';
 $ads_package_options = '<option value = 0>Select ads package</option>';
+
+
+if(isset($categories) && is_array($categories) && sizeof($categories) > 0){
+    foreach($categories as $key => $catgory){
+        $category_name = $catgory['category_title'];
+        $category_id = $catgory['category_id'];
+
+        $selected = ($package_category == $category_id) ? 'selected'  : '';
+
+        $category_options .= '<option '.$selected.' value='.$category_id.'>'.$category_name.'</option>';
+
+    }
+}
 
 if(isset($clients) && is_array($clients) && sizeof($clients) > 0){
     foreach($clients as $key => $client){
@@ -90,6 +104,22 @@ if(isset($adsPackages) && is_array($adsPackages) && sizeof($adsPackages) > 0){
                             $attributes = ['id' => 'frm_package_manipulation', 'class' => 'gy-3', 'enctype' => 'multipart/form-data'];
                             echo form_open($ActionLink, $attributes);
                             ?>
+                                 <div class="row g-3 align-center">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-label float-right" for="main_category">Main Category:</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <select class="form-control" id="main_category" name="main_category">
+                                                    <?= $category_options ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row g-3 align-center">
                                     <div class="col-lg-4">
                                         <div class="form-group">

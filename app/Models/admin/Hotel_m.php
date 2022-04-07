@@ -81,5 +81,15 @@ class Hotel_m extends Model
 
         return $package_details;  
     }
+
+    public function get_categories(){             
+         
+        $category = $this->db->query("SELECT *
+                                        FROM   saputara_facility_categories
+                                    WHERE is_active = 1 ");
+        $category_details = $category->getResultArray();      
+
+        return $category_details;  
+    }
     
 }
