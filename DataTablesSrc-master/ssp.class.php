@@ -828,6 +828,19 @@ class SSP {
 
 				$row['top_package_id'] = $top_package_name;
 
+				$ads_package_id = (int)$row['ads_package_id'];
+
+				$ads_package_details = self::sql_exec($db, "SELECT * FROM saputara_ads_packages WHERE package_id = {$ads_package_id}");				
+				$ads_package_name = "";
+
+				if(!empty($ads_package_details)){
+					$ads_package_details = current($ads_package_details);
+					$ads_package_name = $ads_package_details['package_title'];
+				}			
+
+				$row['ads_package_id'] = $ads_package_name;
+
+
 				
 
 				$checked = '';
