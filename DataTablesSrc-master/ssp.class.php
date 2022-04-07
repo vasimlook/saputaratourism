@@ -812,9 +812,22 @@ class SSP {
 				if(!empty($client_details)){
 					$client_details = current($client_details);
 					$client_name = $client_details['user_firstname'].' '.$client_details['user_lastname'];
-				}
+				}			
 
 				$row['client_id'] = $client_name;
+
+				$top_package_id = (int)$row['top_package_id'];
+
+				$top_package_details = self::sql_exec($db, "SELECT * FROM saputara_facility_packages WHERE package_id = {$top_package_id}");				
+				$top_package_name = "";
+
+				if(!empty($top_package_details)){
+					$top_package_details = current($top_package_details);
+					$top_package_name = $top_package_details['package_title'];
+				}			
+
+				$row['top_package_id'] = $top_package_name;
+
 				
 
 				$checked = '';
