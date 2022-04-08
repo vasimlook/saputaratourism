@@ -79,6 +79,12 @@ $routes->add('admin/load-hotel-package', 'Hotel_c::load_package');
 $routes->add('edit-hotel/(:any)', 'Hotel_c::edit_hotel/$1');
 $routes->add('delete-hotel-image', 'Hotel_c::delete_hotel_image');
 
+$routes->add('admin/add-hotel-room', 'HotelRoom_c::add');
+$routes->add('admin/view-hotel-room', 'HotelRoom_c::view');
+$routes->add('admin/update-hotel-room-status', 'HotelRoom_c::update_status');
+$routes->add('edit-hotel-room/(:any)', 'HotelRoom_c::edit_hotel_room/$1');
+$routes->add('delete-hotel-room-image', 'HotelRoom_c::delete_hotel_room_image');
+
 
 
 // START CLIENT ROUTES

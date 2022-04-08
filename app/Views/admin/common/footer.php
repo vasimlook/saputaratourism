@@ -663,6 +663,134 @@
     </script>
 <?php } ?>
 
+<?php if ($title == ADMIN_EDIT_HOTEL_ROOM_TITLE ) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            var edit_mode = "<?php echo $edit_hotel_room ?>";   
+           
+
+            if(edit_mode){
+                
+                $(document).on('click', '.delete-image', function(e) {
+                    e.preventDefault();
+
+                    if(!confirm("Are you sure wants to delete this image?")) return;
+                    var image_id = $(this).data('id');             
+                    var this_ = $(this);
+                    this_.attr('disabled', 'disabled');
+                    $.ajax({
+                        type: 'POST',
+                        url: "<?php echo ADMIN_DELETE_HOTEL_ROOM_IMAGE ?>",
+                        data: {
+                            image_id
+                        },
+                        success: function(res) {
+                            this_.removeAttr('disabled');
+                            var data = $.parseJSON(res);
+                            if (data.success == 'success') {                            
+                                $("#img_" + image_id).remove();
+                            }
+                        }
+                    });
+                });
+        
+            }
+        });
+    </script>
+<?php } ?>
+
+<?php if ($title == VIEW_HOTEL_ROOM) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            fill_datatable6();
+
+            function fill_datatable6() {
+                $('#hotel_room_details').DataTable({
+                    responsive: {
+                        details: {
+                            type: 'column',
+                            target: 'tr'
+                        }
+                    },
+
+                    columnDefs: [{
+                        className: 'control',
+                        orderable: false,
+                        targets: 0
+                    }],
+                    "processing": true,
+                    "serverSide": true,
+                    "pageLength": 10,
+                    "paginationType": "full_numbers",
+                    "lengthMenu": [
+                        [10, 25, 50, 100],
+                        [10, 25, 50, 100]
+                    ],
+                    "ajax": {
+                        'type': 'POST',
+                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/hotel_room_list.php' ?>",
+                    },
+                    "columns": [{
+                            "data": "index"
+                        },
+                        {
+                            "data": "room_id"
+                        },
+                        {
+                            "data": "hotel_id"
+                        },
+                        {
+                            "data": "room_title"
+                        },
+                        {
+                            "data": "room_type"
+                        },
+                        {
+                            "data": "room_description"
+                        },
+                        {
+                            "data": "is_active"
+                        },
+                        {
+                            "data": "action"
+                        }
+                    ]
+                });
+            }
+
+            $(document).on('change', '.hotel_room_status', function(res) {
+
+                var hotel_room_status = 0;
+                var hotel_room_id = $(this).attr('data-id');
+                if ($(this).prop('checked') == true) {
+                    hotel_status = 1;
+                }
+
+                var data = {
+                    hotel_room_status,
+                    hotel_room_id
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo ADMIN_UPDATE_HOTEL_ROOM_STATUS ?>",
+                    data: data,
+                    success: function(res) {
+                        var res = $.parseJSON(res);
+
+                        var message = (hotel_room_status == 1) ? 'Room activated' : 'Room deactivated';
+                        if (res.success == 'success') {
+                            alert(message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+<?php } ?>
+
 </body>
 
 </html>

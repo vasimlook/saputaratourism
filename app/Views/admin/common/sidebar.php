@@ -108,7 +108,14 @@
                                             <a href="<?php echo ADMIN_ADD_HOTEL_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">Add Hotel</span></a>
                                             <a href="<?php echo ADMIN_VIEW_HOTEL_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">View Hotel</span></a>
                                         </li>                                       
-                                    </ul>                                     
+                                    </ul> 
+                                    
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="<?php echo ADMIN_ADD_HOTEL_ROOM_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">Add Hotel Room</span></a>
+                                            <a href="<?php echo ADMIN_VIEW_HOTEL_ROOM_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">View Hotel Room</span></a>
+                                        </li>                                       
+                                    </ul> 
                                 </li>
                                 
                                 
