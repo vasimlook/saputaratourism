@@ -6,6 +6,14 @@ if (isset($edit_hotel) && $edit_hotel == true) {
     $edit_mode = true;
 }
 
+$hotel_facilities = array();
+
+if(isset($get_client_hotel_facilities) && is_array($get_client_hotel_facilities) && sizeof($get_client_hotel_facilities)){
+    foreach($get_client_hotel_facilities as $key=> $f){
+        $hotel_facilities [] = $f['hotel_facility_id'];
+    }
+}
+
 $imageRequired = true;
 $hotelImage = "";
 
@@ -53,11 +61,14 @@ $hotel_facilities_option = '<option value = 0 >Select hotel facilities</option>'
 
 
 if(isset($facilities) && is_array($facilities) && sizeof($facilities) > 0){
+
     foreach($facilities as $key => $facility){
         $facility_name = $facility['facility_title'];
         $facility_id = $facility['facility_id'];        
 
-        $selected =  '';
+        $selected =  (in_array($facility_id,$hotel_facilities)) ? 'selected' : '';
+        
+        
 
         $hotel_facilities_option .= '<option '.$selected.' value='.$facility_id.'>'.$facility_name.'</option>';
 
@@ -114,7 +125,8 @@ if(isset($hotel_details['other_images']) && is_array(($hotel_details['other_imag
                                     <img src="'.$imagePATH.'" />
                                     <span  class="close-icon delete-image" data-id="'.$imageId.'">X</span>
                                 </ion-card>
-                            </div> ';        }
+                            </div> ';
+    }
 }
 
 echo " <style>

@@ -146,5 +146,36 @@ class Hotel_m extends Model
         $builder->insert($params);
         return $this->db->insertID();        
     }
+
+    public function get_client_hotel_facilities($hotelId){
+
+        $facilities = array();
+
+        $hotelId = (int)$hotelId;
+
+        if($hotelId === 0)
+            return $facilities;
+
+        $facility = $this->db->query("SELECT *
+                                        FROM  saputara_client_hotel_facilities
+                                    WHERE hotel_id = {$hotelId} ");
+        $facility_details = $facility->getResultArray();      
+
+        return $facility_details; 
+    }
+
+    public function delete_client_hotel_facilities($hotelId){
+        $hotelId = (int)$hotelId;
+
+        if($hotelId === 0)
+            return false;
+        
+        $builder = $this->db->table('saputara_client_hotel_facilities');
+        $builder->where('hotel_id', $hotelId);
+        
+        $builder->delete();     
+        return true;
+    }
+
     
 }

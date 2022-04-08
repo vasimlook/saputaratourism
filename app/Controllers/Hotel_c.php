@@ -93,7 +93,6 @@ class Hotel_c extends BaseController{
                   'hotel_id' => $hotelId,
                   'hotel_facility_id' => $facility_id
                 );
-
                 $this->Hotel_m->add_hotel_facilities($data);
               }
             }         
@@ -250,6 +249,20 @@ class Hotel_c extends BaseController{
           $update = $this->Hotel_m->update_hotel($hotel_details,$hotel_id);
     
           if ($update) {
+
+
+            $this->Hotel_m->delete_client_hotel_facilities($hotel_id);
+
+            if(isset($_REQUEST['facilities']) && is_array($_REQUEST['facilities']) && sizeof($_REQUEST['facilities']) > 0){           
+              foreach($_REQUEST['facilities'] as $key => $facility_id){
+                $data = array(
+                  'hotel_id' => $hotel_id,
+                  'hotel_facility_id' => $facility_id
+                );
+                $this->Hotel_m->add_hotel_facilities($data);
+              }
+            }  
+
             if (($_FILES['other_hotel_images']['name'][0]) != '') {
               $other_hotel_images = multiImageUpload('other_hotel_images');
               foreach ($other_hotel_images as $poi) {
@@ -258,8 +271,9 @@ class Hotel_c extends BaseController{
                   $params['image_path'] = $poi[2]['file_name'];
                   $params['is_active'] = 1;
                   $this->Hotel_m->add_hotel_images($params);
-              }
-           }
+            }         
+
+          }
 
             successOrErrorMessage("Hotel has been successfully updated", 'success');
             return redirect()->to(ADMIN_VIEW_HOTEL_LINK);
@@ -271,11 +285,15 @@ class Hotel_c extends BaseController{
 
         $clients =  $this->Hotel_m->get_clients();          
         $adsPackages  = $this->Hotel_m->get_ads_packges();
-        $categories =  $this->Hotel_m->get_categories();    
+        $categories =  $this->Hotel_m->get_categories(); 
+         
+        $get_client_hotel_facilities = $this->Hotel_m->get_client_hotel_facilities($hotel_id);
+        
 
         $top_package_id = (isset($hotel_details['top_package_id'])) ?(int)$hotel_details['top_package_id'] : 0;
         $facilities =  $this->Hotel_m->get_hotel_facilities();
         $data['facilities'] = $facilities;
+        $data['get_client_hotel_facilities'] = $get_client_hotel_facilities;
         $data['categories'] = $categories;
         $data['top_package_id'] = $top_package_id;
         $data['clients'] = $clients;
