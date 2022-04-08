@@ -49,6 +49,20 @@ if ($edit_mode) {
 $category_options = '<option value = 0>Select Category</option>';
 $client_options = '<option value = 0>Select client</option>';
 $ads_package_options = '<option value = 0>Select ads package</option>';
+$hotel_facilities_option = '<option value = 0 >Select hotel facilities</option>';
+
+
+if(isset($facilities) && is_array($facilities) && sizeof($facilities) > 0){
+    foreach($facilities as $key => $facility){
+        $facility_name = $facility['facility_title'];
+        $facility_id = $facility['facility_id'];        
+
+        $selected =  '';
+
+        $hotel_facilities_option .= '<option '.$selected.' value='.$facility_id.'>'.$facility_name.'</option>';
+
+    }
+}
 
 
 if(isset($categories) && is_array($categories) && sizeof($categories) > 0){
@@ -195,7 +209,24 @@ echo " <style>
                                             </div>
                                         </div>
                                     </div>
-                                </div>                                
+                                </div>  
+                                
+                                <div class="row g-3 align-center">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-label float-right" for="client_id">Hotel Facilities:</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <select class="form-control" id="facilities" name="facilities[]" multiple>
+                                                    <?= $hotel_facilities_option ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
                                
                                 <div class="row g-3 align-center">
                                     <div class="col-lg-4">

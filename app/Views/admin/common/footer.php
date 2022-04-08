@@ -602,6 +602,31 @@
                     
                     $("#top_package_id").val(top_package_id)
                 });
+
+                
+                $(document).on('click', '.delete-image', function(e) {
+                    e.preventDefault();
+
+                    if(!confirm("Are you sure wants to delete this image?")) return;
+                    var image_id = $(this).data('id');             
+                    var this_ = $(this);
+                    this_.attr('disabled', 'disabled');
+                    $.ajax({
+                        type: 'POST',
+                        url: "<?php echo ADMIN_DELETE_HOTEL_IMAGE ?>",
+                        data: {
+                            image_id
+                        },
+                        success: function(res) {
+                            this_.removeAttr('disabled');
+                            var data = $.parseJSON(res);
+                            if (data.success == 'success') {                            
+                                $("#img_" + image_id).remove();
+                            }
+                        }
+                    });
+                });
+        
             }           
             
 

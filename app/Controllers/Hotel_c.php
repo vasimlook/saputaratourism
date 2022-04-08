@@ -86,6 +86,17 @@ class Hotel_c extends BaseController{
                   $this->Hotel_m->add_hotel_images($params);
               }
            }
+
+           if(isset($_REQUEST['facilities']) && is_array($_REQUEST['facilities']) && sizeof($_REQUEST['facilities']) > 0){           
+              foreach($_REQUEST['facilities'] as $key => $facility_id){
+                $data = array(
+                  'hotel_id' => $hotelId,
+                  'hotel_facility_id' => $facility_id
+                );
+
+                $this->Hotel_m->add_hotel_facilities($data);
+              }
+            }         
     
             successOrErrorMessage("Hotel has been successfully created", 'success');
             return redirect()->to(ADMIN_VIEW_HOTEL_LINK);
@@ -100,8 +111,10 @@ class Hotel_c extends BaseController{
         $clients =  $this->Hotel_m->get_clients();            
         $adsPackages  = $this->Hotel_m->get_ads_packges();
         $categories =  $this->Hotel_m->get_categories();    
+        $facilities =  $this->Hotel_m->get_hotel_facilities();    
     
         $data['clients'] = $clients;        
+        $data['facilities'] = $facilities;        
         $data['categories'] = $categories;        
         $data['adsPackages'] = $adsPackages;
         $data['hotel_details'] = $hotel_details;
@@ -121,6 +134,24 @@ class Hotel_c extends BaseController{
         $hotel_descriptions = trim($hotelData['hotel_descriptions']);
         $client_id = (int)$hotelData['client_id'];
 
+        $has_facilities = false;
+
+        $hotel_facilities = array();
+
+        if(isset($_REQUEST['facilities']) && is_array($_REQUEST['facilities']) && sizeof($_REQUEST['facilities']) > 0){       
+          foreach($_REQUEST['facilities'] as $key=> $facility_id){
+            $has_facilities = true;
+            if((int)$facility_id === 0){
+              $has_facilities = false;
+            }else{
+              $hotel_facilities [] = $facility_id;
+            }
+              
+          }         
+        }
+
+        
+
         $has_error = false;
         $hotel_details = array();  
 
@@ -139,19 +170,28 @@ class Hotel_c extends BaseController{
           $hotel_details['hotel_title'] = $hotel_title;
         }
 
-        if (empty($hotel_descriptions) || $hotel_descriptions == '') {
+        if (!$has_facilities) {
           $has_error = true;
-          $error_messages[] = "Hotel description can not be empty!";
+          $error_messages[] = "Please select hotel facilities!";
         } else {
-          $hotel_details['hotel_descriptions'] = $hotel_descriptions;
-        }
+          // $hotel_details['hotel_facilities'] = $hotel_facilities;
+        } 
 
         if ($client_id === 0) {
           $has_error = true;
           $error_messages[] = "Please select hotel client!";
         } else {
           $hotel_details['client_id'] = $client_id;
-        }      
+        } 
+
+
+
+        if (empty($hotel_descriptions) || $hotel_descriptions == '') {
+          $has_error = true;
+          $error_messages[] = "Hotel description can not be empty!";
+        } else {
+          $hotel_details['hotel_descriptions'] = $hotel_descriptions;
+        }           
 
        
         if (isset($hotelData['is_active']) && $hotelData['is_active'] == "on") {
@@ -159,7 +199,7 @@ class Hotel_c extends BaseController{
         }
 
         $hotel_details['ads_package_id'] = (int)$hotelData['ads_package_id'];
-        $hotel_details['top_package_id'] = (int)$hotelData['top_package_id'];
+        $hotel_details['top_package_id'] = (int)$hotelData['top_package_id'];        
     
         return array(
           'has_error' => $has_error,
@@ -234,6 +274,8 @@ class Hotel_c extends BaseController{
         $categories =  $this->Hotel_m->get_categories();    
 
         $top_package_id = (isset($hotel_details['top_package_id'])) ?(int)$hotel_details['top_package_id'] : 0;
+        $facilities =  $this->Hotel_m->get_hotel_facilities();
+        $data['facilities'] = $facilities;
         $data['categories'] = $categories;
         $data['top_package_id'] = $top_package_id;
         $data['clients'] = $clients;

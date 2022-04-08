@@ -131,5 +131,20 @@ class Hotel_m extends Model
         $builder->delete();     
         return true;
     }
+
+    public function get_hotel_facilities(){
+        $facility = $this->db->query("SELECT *
+                                        FROM   	saputara_hotel_facilities
+                                    WHERE is_active = 1 ");
+        $facility_details = $facility->getResultArray();      
+
+        return $facility_details; 
+    }
+
+    public function add_hotel_facilities($params){
+        $builder = $this->db->table('saputara_client_hotel_facilities');
+        $builder->insert($params);
+        return $this->db->insertID();        
+    }
     
 }
