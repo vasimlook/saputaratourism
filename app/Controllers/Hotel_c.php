@@ -70,11 +70,29 @@ class Hotel_c extends BaseController{
         }
     
         if (!$has_error && (is_array($hotel_details) && sizeof($hotel_details) > 0)) {
-          //create hotel  
-    
+          //create hotel
           $hotelId = $this->Hotel_m->create_hotel($hotel_details);
     
-          if ($hotelId) {   
+          if ($hotelId) {               
+
+            $top_package_id = isset($hotel_details['top_package_id']) ? (int)$hotel_details['top_package_id'] : 0;            
+
+            if($top_package_id !== 0){
+              $package_details = $this->Hotel_m->top_package_details($top_package_id);
+
+              $package_data = array(
+                'module_type' => 'hotel',
+                'module_id' => $hotelId,
+                'package_id' => $top_package_id,
+                'total_price' => $package_details['package_price']
+              );
+
+              $paymentId = $this->Hotel_m->add_hotel_package_details($package_data);
+
+              if($paymentId){
+                $this->Hotel_m->add_hotel_payment_id($hotelId,$paymentId);
+              }
+            }          
             
             if (($_FILES['other_hotel_images']['name'][0]) != '') {
               $other_hotel_images = multiImageUpload('other_hotel_images');

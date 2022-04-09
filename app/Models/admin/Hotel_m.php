@@ -177,5 +177,41 @@ class Hotel_m extends Model
         return true;
     }
 
+    public function top_package_details($package_id){
+        $details = array();
+        $package_id = (int)$package_id;
+
+        if($package_id === 0)
+            return $details;
+         
+        $package = $this->db->query("SELECT *
+                                        FROM   saputara_facility_packages
+                                    WHERE package_id = {$package_id} ");
+        $package_details = $package->getRowArray();      
+
+        return $package_details;
+    }
+
+    public function add_hotel_package_details($params) {               
+        $params['created_at'] = date("Y-m-d H:i:s");
+        $params['created_by'] = (int)$_SESSION['admin']['admin_user_id'];
+        $builder = $this->db->table('saputara_top_package_payment_history');
+        $builder->insert($params);
+        return $this->db->insertID();
+    } 
+
+    public function add_hotel_payment_id($hotelId,$paymentId){
+        $hotelId = (int)$hotelId;
+        $paymentId = (int)$paymentId;
+
+        if($hotelId === 0 || $paymentId === 0)
+            return false;
+        
+        $params['payment_id'] = $paymentId;        
+        $builder = $this->db->table('saputara_hotel_modules');
+        $builder->where('hotel_id', $hotelId);
+        return $builder->update($params);    
+    }
+
     
 }
