@@ -207,7 +207,7 @@ class Hotel_m extends Model
         if($hotelId === 0 || $paymentId === 0)
             return false;
         
-        $params['payment_id'] = $paymentId;        
+        $params['top_payment_id'] = $paymentId;        
         $builder = $this->db->table('saputara_hotel_modules');
         $builder->where('hotel_id', $hotelId);
         return $builder->update($params);    
