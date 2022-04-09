@@ -122,6 +122,9 @@ define('ADD_HOTEL_ROOM', 'Add Hotel Room');
 define('VIEW_HOTEL_ROOM', 'View Hotel Room');
 define('ADMIN_EDIT_HOTEL_ROOM_TITLE', 'Edit Hotel Room');
 
+define('VIEW_TOP_PACKAGE_PAYMENT', 'View Top Package Payment');
+
+
 
 // START ADMIN LINK
 define('ADMIN_LOGIN_LINK', BASE_URL_CI.'/admin/login');
@@ -165,6 +168,8 @@ define('ADMIN_VIEW_HOTEL_ROOM_LINK', BASE_URL_CI.'/admin/view-hotel-room');
 define('ADMIN_UPDATE_HOTEL_ROOM_STATUS', BASE_URL_CI.'/admin/update-hotel-room-status');
 define('ADMIN_EDIT_HOTEL_ROOM_LINK', BASE_URL_CI.'/edit-hotel-room');
 define('ADMIN_DELETE_HOTEL_ROOM_IMAGE', BASE_URL_CI.'/admin/delete-hotel-room-image');
+
+define('ADMIN_VIEW_TOP_PACKAGE_PAYMENT_LINK', BASE_URL_CI.'/admin/view-top-package-payments');
 
 
 // START CLIENT TITLE

@@ -123,6 +123,18 @@
                                         </li>                                       
                                     </ul>                                     
                                 </li> 
+
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-text">Hotel Payments</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">                                        
+                                            <a href="<?php echo ADMIN_VIEW_TOP_PACKAGE_PAYMENT_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">View Hotel Payments</span></a>
+                                        </li>                                       
+                                    </ul>                                     
+                                </li> 
                                 
                                 
                                 <!-- .nk-menu-item -->

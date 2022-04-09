@@ -791,6 +791,63 @@
     </script>
 <?php } ?>
 
+<?php if ($title == VIEW_TOP_PACKAGE_PAYMENT) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            fill_datatable7();
+
+            function fill_datatable7() {
+                $('#hotel_payment_details').DataTable({
+                    responsive: {
+                        details: {
+                            type: 'column',
+                            target: 'tr'
+                        }
+                    },
+
+                    columnDefs: [{
+                        className: 'control',
+                        orderable: false,
+                        targets: 0
+                    }],
+                    "processing": true,
+                    "serverSide": true,
+                    "pageLength": 10,
+                    "paginationType": "full_numbers",
+                    "lengthMenu": [
+                        [10, 25, 50, 100],
+                        [10, 25, 50, 100]
+                    ],
+                    "ajax": {
+                        'type': 'POST',
+                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/hotel_payment_list.php' ?>",
+                    },
+                    "columns": [{
+                            "data": "index"
+                        },
+                        {
+                            "data": "payment_id"
+                        },
+                        {
+                            "data": "module_id"
+                        },
+                        {
+                            "data": "package_id"
+                        },
+                        {
+                            "data": "total_price"
+                        },
+                        {
+                            "data": "action"
+                        }
+                    ]
+                });
+            }           
+        });
+    </script>
+<?php } ?>
+
 </body>
 
 </html>
