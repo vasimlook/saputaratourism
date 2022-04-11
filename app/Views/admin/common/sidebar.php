@@ -131,7 +131,7 @@
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">                                        
-                                            <a href="<?php echo ADMIN_VIEW_TOP_PACKAGE_PAYMENT_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">View Hotel Payments</span></a>
+                                            <a href="<?php echo ADMIN_VIEW_TOP_PACKAGE_PAYMENT_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">Hotel Top Package Payments</span></a>
                                         </li>                                       
                                     </ul>                                     
                                 </li> 
