@@ -39,7 +39,7 @@ $columns = array(
 );
 include 'conn.php';
 
-$where=" sp.module_type = 'hotel' ";
+$where=" sp.module_type = 'hotel' and sp.last_payments = 1 ";
 
 //if(!empty($_REQUEST['search']['value'])){
 //    $value=$_REQUEST['search']['value'];
