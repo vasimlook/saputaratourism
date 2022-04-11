@@ -79,12 +79,14 @@ class Hotel_c extends BaseController{
 
             if($top_package_id !== 0){
               $package_details = $this->Hotel_m->top_package_details($top_package_id);
+              $this->Hotel_m->update_last_payments($hotelId);
 
               $package_data = array(
                 'module_type' => 'hotel',
                 'module_id' => $hotelId,
                 'package_id' => $top_package_id,
-                'total_price' => $package_details['package_price']
+                'total_price' => $package_details['package_price'],
+                'last_payments' => 1
               );
 
               $paymentId = $this->Hotel_m->add_hotel_package_details($package_data);
@@ -228,6 +230,7 @@ class Hotel_c extends BaseController{
     public function edit_hotel($hotel_id){
         helper('form');  
         $hotel_details = $this->Hotel_m->get_hotel_details($hotel_id);
+        $top_payment_id = isset($hotel_details['top_payment_id']) ? (int)$hotel_details['top_payment_id'] : 0;
         $hotel_images = $this->Hotel_m->get_hotel_images($hotel_id);
         
         $has_error = false;
@@ -267,6 +270,34 @@ class Hotel_c extends BaseController{
           $update = $this->Hotel_m->update_hotel($hotel_details,$hotel_id);
     
           if ($update) {
+
+            $top_package_id = isset($hotel_details['top_package_id']) ? (int)$hotel_details['top_package_id'] : 0;                        
+
+            if($top_package_id !== 0){
+              $package_details = $this->Hotel_m->top_package_details($top_package_id);              
+
+              $package_data = array(
+                'module_type' => 'hotel',
+                'module_id' => $hotel_id,
+                'package_id' => $top_package_id,
+                'total_price' => $package_details['package_price'],
+                'last_payments' => 1
+              );
+
+              if($top_payment_id){//update payment entry
+
+                $this->Hotel_m->update_hotel_package_details($top_payment_id,$hotel_id,$package_data);
+
+              }else{// add new entry
+                $paymentId = $this->Hotel_m->add_hotel_package_details($package_data);
+
+              if($paymentId){
+                $this->Hotel_m->add_hotel_payment_id($hotel_id,$paymentId);
+              }
+              }
+
+              
+            }  
 
 
             $this->Hotel_m->delete_client_hotel_facilities($hotel_id);

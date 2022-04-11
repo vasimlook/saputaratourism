@@ -213,5 +213,31 @@ class Hotel_m extends Model
         return $builder->update($params);    
     }
 
+    public function update_last_payments($hotelId){
+        $hotelId = (int)$hotelId;
+
+        if($hotelId === 0)
+            return false;
+        
+        $params['last_payments'] = 1;        
+        $builder = $this->db->table('saputara_top_package_payment_history');
+        $builder->where('module_id', $hotelId);
+        $builder->where('module_type', 'hotel');
+        return $builder->update($params);     
+    }
+
+    public function update_hotel_package_details($paymentId,$hotelId,$params){
+        $hotelId = (int)$hotelId;
+
+        if($hotelId === 0)
+            return false;        
+              
+        $builder = $this->db->table('saputara_top_package_payment_history');
+        $builder->where('module_id', $hotelId);
+        $builder->where('module_type', 'hotel');
+        $builder->where('payment_id', $paymentId);
+        return $builder->update($params);     
+    }
+
     
 }

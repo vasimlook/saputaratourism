@@ -1,0 +1,48 @@
+ERROR - 2022-04-11 16:40:43 --> mysqli_sql_exception: Table 'saputara.saputara_home_slider' doesn't exist in C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\r\n     ...')
+#1 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\r\n     ...')
+#2 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\r\n     ...')
+#3 C:\xampp\htdocs\saputaratourism\app\Models\Home_model.php(47): CodeIgniter\Database\BaseConnection->query('SELECT *\r\n     ...')
+#4 C:\xampp\htdocs\saputaratourism\app\Controllers\Home_c.php(17): App\Models\Home_model->get_home_slider()
+#5 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\Home_c->index()
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home_c))
+#7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 16:40:43 --> mysqli_sql_exception: Table 'saputara.saputara_about' doesn't exist in C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\r\n     ...')
+#1 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\r\n     ...')
+#2 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\r\n     ...')
+#3 C:\xampp\htdocs\saputaratourism\app\Models\Home_model.php(55): CodeIgniter\Database\BaseConnection->query('SELECT *\r\n     ...')
+#4 C:\xampp\htdocs\saputaratourism\app\Controllers\Home_c.php(19): App\Models\Home_model->get_saputara_about()
+#5 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\Home_c->index()
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home_c))
+#7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 16:40:43 --> mysqli_sql_exception: Table 'saputara.saputara_home_slider' doesn't exist in C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\r\n     ...')
+#1 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\r\n     ...')
+#2 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\r\n     ...')
+#3 C:\xampp\htdocs\saputaratourism\app\Models\Home_model.php(47): CodeIgniter\Database\BaseConnection->query('SELECT *\r\n     ...')
+#4 C:\xampp\htdocs\saputaratourism\app\Controllers\Home_c.php(17): App\Models\Home_model->get_home_slider()
+#5 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\Home_c->index()
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home_c))
+#7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 16:40:43 --> mysqli_sql_exception: Table 'saputara.saputara_about' doesn't exist in C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\r\n     ...')
+#1 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\r\n     ...')
+#2 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\r\n     ...')
+#3 C:\xampp\htdocs\saputaratourism\app\Models\Home_model.php(55): CodeIgniter\Database\BaseConnection->query('SELECT *\r\n     ...')
+#4 C:\xampp\htdocs\saputaratourism\app\Controllers\Home_c.php(19): App\Models\Home_model->get_saputara_about()
+#5 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\Home_c->index()
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home_c))
+#7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
