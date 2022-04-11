@@ -34,7 +34,8 @@ $columns = array(
     array('db' => 'sp.payment_id', 'dt' =>'payment_id'),
     array('db' => 'sp.module_id', 'dt' =>'module_id'),
     array('db' => 'sp.package_id', 'dt' =>'package_id'),          
-    array('db' => 'sp.total_price', 'dt' =>'total_price')
+    array('db' => 'sp.total_price', 'dt' =>'total_price'),
+    array('db' => 'sp.payment_status', 'dt' =>'payment_status'),
    
 );
 include 'conn.php';
@@ -52,7 +53,7 @@ $where=" sp.module_type = 'hotel' and sp.last_payments = 1 ";
  */
 require('ssp.class.php');
 echo json_encode(
-       SSP::hotel_payment_list($_REQUEST, $sql_details, $table, $primaryKey, $columns,$where)
+       SSP::hotel_top_pacakge_payment_list($_REQUEST, $sql_details, $table, $primaryKey, $columns,$where)
 );
 
 

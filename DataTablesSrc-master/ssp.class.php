@@ -965,7 +965,7 @@ class SSP {
 		);
 	}
 
-	static function hotel_payment_list($request, $conn, $table, $primaryKey, $columns, $where_custom = '')
+	static function hotel_top_pacakge_payment_list($request, $conn, $table, $primaryKey, $columns, $where_custom = '')
 	{
 		$bindings = array();
 		$db = self::db($conn);
@@ -1055,7 +1055,15 @@ class SSP {
 				$row['package_id'] = $package_name;				
 				
 				$row['index'] = '';
-				$row['action'] = "<a href='#' class='btn btn-xs btn-warning'>Make Payments <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+
+				$paymentAction = "<a href='#' data-payment-id=".$id." class='btn btn-xs btn-primary make-top-package-payments'>Make Payments <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+
+				if($row['payment_status'] == 1){
+					$paymentAction = "<a href='#' class='btn btn-xs btn-success'>Completed<em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+				}
+					
+
+				$row['action'] = $paymentAction;
 				array_push($resData, $row);
 			}
 		}
