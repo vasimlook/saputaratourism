@@ -46,3 +46,55 @@ Stack trace:
 #7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
 #9 {main}
+ERROR - 2022-04-11 17:40:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '17:40:07,
+                                                updated_at  = 2022...' at line 7 in C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php(314): mysqli->query(' UPDATE\r\n      ...')
+#1 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute(' UPDATE\r\n      ...')
+#2 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery(' UPDATE\r\n      ...')
+#3 C:\xampp\htdocs\saputaratourism\app\Models\admin\Hotel_m.php(261): CodeIgniter\Database\BaseConnection->query(' UPDATE\r\n      ...')
+#4 C:\xampp\htdocs\saputaratourism\app\Controllers\Hotel_c.php(405): App\Models\admin\Hotel_m->make_hotel_top_package_payments(1)
+#5 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\Hotel_c->make_hotel_top_package_payments()
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel_c))
+#7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 17:40:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+                              top_payment_id  = 1' at line 5 in C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php(314): mysqli->query('UPDATE\r\n       ...')
+#1 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE\r\n       ...')
+#2 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE\r\n       ...')
+#3 C:\xampp\htdocs\saputaratourism\app\Models\admin\Hotel_m.php(271): CodeIgniter\Database\BaseConnection->query('UPDATE\r\n       ...')
+#4 C:\xampp\htdocs\saputaratourism\app\Controllers\Hotel_c.php(405): App\Models\admin\Hotel_m->make_hotel_top_package_payments(1)
+#5 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\Hotel_c->make_hotel_top_package_payments()
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel_c))
+#7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 17:42:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '17:42:44,
+                                                updated_at  = 2022...' at line 7 in C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php(314): mysqli->query(' UPDATE\r\n      ...')
+#1 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute(' UPDATE\r\n      ...')
+#2 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery(' UPDATE\r\n      ...')
+#3 C:\xampp\htdocs\saputaratourism\app\Models\admin\Hotel_m.php(261): CodeIgniter\Database\BaseConnection->query(' UPDATE\r\n      ...')
+#4 C:\xampp\htdocs\saputaratourism\app\Controllers\Hotel_c.php(405): App\Models\admin\Hotel_m->make_hotel_top_package_payments(1)
+#5 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\Hotel_c->make_hotel_top_package_payments()
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel_c))
+#7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 17:48:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '17:48:11,
+                                                updated_at  = 2022...' at line 7 in C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\saputaratourism\system\Database\MySQLi\Connection.php(314): mysqli->query(' UPDATE\r\n      ...')
+#1 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute(' UPDATE\r\n      ...')
+#2 C:\xampp\htdocs\saputaratourism\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery(' UPDATE\r\n      ...')
+#3 C:\xampp\htdocs\saputaratourism\app\Models\admin\Hotel_m.php(272): CodeIgniter\Database\BaseConnection->query(' UPDATE\r\n      ...')
+#4 C:\xampp\htdocs\saputaratourism\app\Controllers\Hotel_c.php(405): App\Models\admin\Hotel_m->make_hotel_top_package_payments(1)
+#5 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\Hotel_c->make_hotel_top_package_payments()
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel_c))
+#7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#9 {main}

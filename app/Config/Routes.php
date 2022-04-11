@@ -86,6 +86,8 @@ $routes->add('edit-hotel-room/(:any)', 'HotelRoom_c::edit_hotel_room/$1');
 $routes->add('delete-hotel-room-image', 'HotelRoom_c::delete_hotel_room_image');
 
 $routes->add('admin/view-top-package-payments', 'TopPackagePayment_c::view');
+$routes->add('admin/make-top-package-hotel-payments', 'Hotel_c::make_hotel_top_package_payments');
+
 
 
 

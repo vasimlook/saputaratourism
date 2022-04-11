@@ -1059,7 +1059,7 @@ class SSP {
 				$paymentAction = "<a href='#' data-payment-id=".$id." class='btn btn-xs btn-primary make-top-package-payments'>Make Payments <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
 
 				if($row['payment_status'] == 1){
-					$paymentAction = "<a href='#' class='btn btn-xs btn-success'>Completed<em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+					$paymentAction = "<a href='#' class='btn btn-xs btn-success'>Completed</a> &nbsp;";
 				}
 					
 
