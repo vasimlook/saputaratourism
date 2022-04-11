@@ -821,7 +821,7 @@
                     ],
                     "ajax": {
                         'type': 'POST',
-                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/hotel_payment_list.php' ?>",
+                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/hotel_top_package_payment_list.php' ?>",
                     },
                     "columns": [{
                             "data": "index"
