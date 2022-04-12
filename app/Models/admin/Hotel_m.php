@@ -219,7 +219,7 @@ class Hotel_m extends Model
         if($hotelId === 0)
             return false;
         
-        $params['last_payments'] = 1;        
+        $params['last_payments'] = 0;        
         $builder = $this->db->table('saputara_top_package_payment_history');
         $builder->where('module_id', $hotelId);
         $builder->where('module_type', 'hotel');
@@ -260,7 +260,7 @@ class Hotel_m extends Model
         if($hotelId === 0)
             return false;
         
-        $params['last_payments'] = 1;        
+        $params['last_payments'] = 0;        
         $builder = $this->db->table('saputara_ads_package_payment_history');
         $builder->where('module_id', $hotelId);
         $builder->where('module_type', 'hotel');
