@@ -873,7 +873,7 @@ class SSP {
 					}
 
 					if($ads_package_expired){
-						$AdspaymentAction = "<a href='#' data-hotel-id=".$id." class='btn btn-xs btn-danger renew-hotel-ads-package-payments'>Renew<em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+						$AdspaymentAction = "<a href='#' data-hotel-id=".$id." data-ads-package-id=".$ads_package_id." class='btn btn-xs btn-danger renew-hotel-ads-package'>Renew<em class='icon ni ni-edit-fill'></em></a> &nbsp;";
 					}
 				}
 

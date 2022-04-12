@@ -1016,6 +1016,31 @@
                     }
                 });
             });
+
+            $(document).on('click','.renew-hotel-ads-package',function(){
+                var hotel_id = $(this).attr('data-hotel-id');
+                var ads_package_id = $(this).attr('data-ads-package-id');
+
+                if(!confirm('Are you sure wants to renew top package?')) return false;
+
+                var data = {
+                    hotel_id,
+                    ads_package_id
+                }
+
+                $.ajax({
+                    type :'POST',
+                    url : '<?php echo ADMIN_RENEW_HOTEL_ADS_PACKAGE_LINK ?>',
+                    data:data,
+                    success:function(res){
+                        var res = $.parseJSON(res);                       
+                        if (res.success == 'success') {
+                            alert("Ads package renewed");
+                            location.reload();
+                        }
+                    }
+                });
+            });
         });
     </script>
 <?php } ?>

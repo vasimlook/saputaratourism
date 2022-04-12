@@ -162,6 +162,7 @@ define('ADMIN_EDIT_HOTEL_FACILITY_LINK', BASE_URL_CI.'/edit-hotel-facility');
 define('ADMIN_ADD_HOTEL_LINK', BASE_URL_CI.'/admin/add-hotel');
 define('ADMIN_VIEW_HOTEL_LINK', BASE_URL_CI.'/admin/view-hotel');
 define('ADMIN_RENEW_HOTEL_TOP_PACKAGE_LINK', BASE_URL_CI.'/admin/renew-hotel-top-package');
+define('ADMIN_RENEW_HOTEL_ADS_PACKAGE_LINK', BASE_URL_CI.'/admin/renew-hotel-ads-package');
 define('ADMIN_UPDATE_HOTEL_STATUS', BASE_URL_CI.'/admin/update-hotel-status');
 define('ADMIN_EDIT_HOTEL_LINK', BASE_URL_CI.'/edit-hotel');
 
