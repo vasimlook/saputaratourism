@@ -286,6 +286,7 @@ class Hotel_m extends Model
                 $topPackagepaymentsLog = array(
                     'payment_id' => $paymentId,
                     'credit_amount' => $totalAmount,
+                    'is_package' => 1,
                     'created_at' => $date,
                 );
                 $builder = $this->db->table('saputara_top_package_payments_logs');
