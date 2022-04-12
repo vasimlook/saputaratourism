@@ -251,6 +251,7 @@ class Hotel_c extends BaseController{
         helper('form');  
         $hotel_details = $this->Hotel_m->get_hotel_details($hotel_id);
         $top_payment_id = isset($hotel_details['top_payment_id']) ? (int)$hotel_details['top_payment_id'] : 0;
+        $ads_payment_id = isset($hotel_details['ads_payment_id']) ? (int)$hotel_details['ads_payment_id'] : 0;
         $hotel_images = $this->Hotel_m->get_hotel_images($hotel_id);
         
         $has_error = false;
@@ -291,7 +292,34 @@ class Hotel_c extends BaseController{
     
           if ($update) {
 
-            $top_package_id = isset($hotel_details['top_package_id']) ? (int)$hotel_details['top_package_id'] : 0;                        
+            $top_package_id = isset($hotel_details['top_package_id']) ? (int)$hotel_details['top_package_id'] : 0;                      
+            $ads_package_id = isset($hotel_details['ads_package_id']) ? (int)$hotel_details['ads_package_id'] : 0;   
+            
+            if($ads_package_id !== 0){
+              $ads_package_details = $this->Hotel_m->ads_package_details($ads_package_id);              
+
+              $package_data = array(
+                'module_type' => 'hotel',
+                'module_id' => $hotel_id,
+                'package_id' => $ads_package_id,
+                'total_price' => $ads_package_details['package_price'],
+                'last_payments' => 1
+              );
+
+              if($ads_payment_id){//update payment entry
+
+                $this->Hotel_m->update_hotel_ads_package_details($ads_payment_id,$hotel_id,$package_data);
+
+              }else{// add new entry
+                $paymentId = $this->Hotel_m->add_hotel_ads_package_details($package_data);
+
+              if($paymentId){
+                $this->Hotel_m->add_hotel_ads_payment_id($hotel_id,$paymentId);
+              }
+              }
+
+              
+            } 
 
             if($top_package_id !== 0){
               $package_details = $this->Hotel_m->top_package_details($top_package_id);              
