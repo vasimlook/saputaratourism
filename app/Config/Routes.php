@@ -76,6 +76,7 @@ $routes->add('admin/add-hotel', 'Hotel_c::add');
 $routes->add('admin/view-hotel', 'Hotel_c::view');
 $routes->add('admin/update-hotel-status', 'Hotel_c::update_status');
 $routes->add('admin/load-hotel-package', 'Hotel_c::load_package');
+$routes->add('admin/renew-hotel-top-package', 'Hotel_c::renew_hotel_top_package');
 $routes->add('edit-hotel/(:any)', 'Hotel_c::edit_hotel/$1');
 $routes->add('delete-hotel-image', 'Hotel_c::delete_hotel_image');
 
@@ -90,6 +91,7 @@ $routes->add('admin/make-top-package-payments', 'TopPackagePayment_c::make_top_p
 
 $routes->add('admin/view-ads-package-payments', 'AdsPackagePayment_c::view');
 $routes->add('admin/make-ads-package-payments', 'AdsPackagePayment_c::make_ads_package_payments');
+
 
 
 

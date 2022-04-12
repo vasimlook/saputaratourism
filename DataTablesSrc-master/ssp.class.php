@@ -829,6 +829,7 @@ class SSP {
 				$ToppaymentAction = '';
 
 				if($top_package_id !== 0){
+					$expired_top_package = (int)$row['top_package_expired'];
 					$top_pacakge_status = (int)$row['top_package_payment_status'];
 					$top_payment_id = (int)$row['top_payment_id'];
 
@@ -837,6 +838,10 @@ class SSP {
 				
 					if($top_pacakge_status == 1){
 						$ToppaymentAction = "<a href='#' class='btn btn-xs btn-success'>Completed</a> &nbsp;";
+					}
+
+					if($expired_top_package){
+						$ToppaymentAction = "<a href='#' data-hotel-id=".$id." data-package-id=".$top_package_id." class='btn btn-xs btn-danger renew-hotel-top-package'>Renew <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
 					}
 				}				
 
@@ -856,14 +861,19 @@ class SSP {
 				$AdspaymentAction = '';
 
 				if($ads_package_id !== 0){
+					$ads_package_expired = (int)$row['ads_package_expired'];
 					$ads_pacakge_status = (int)$row['ads_package_payment_status'];
 					$ads_payment_id = (int)$row['ads_payment_id'];
 
-					$AdspaymentAction = "<a href='#' data-payment-id=".$ads_payment_id." class='btn btn-xs btn-primary make-ads-package-payments'>Make Payments <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+					$AdspaymentAction = "<a href='#' data-payment-id=".$ads_payment_id." class='btn btn-xs btn-primary make-ads-package'>Make Payments <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
 
 				
 					if($ads_pacakge_status == 1){
 						$AdspaymentAction = "<a href='#' class='btn btn-xs btn-success'>Completed</a> &nbsp;";
+					}
+
+					if($ads_package_expired){
+						$AdspaymentAction = "<a href='#' data-hotel-id=".$id." class='btn btn-xs btn-danger renew-hotel-ads-package-payments'>Renew<em class='icon ni ni-edit-fill'></em></a> &nbsp;";
 					}
 				}
 

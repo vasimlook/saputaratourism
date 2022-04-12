@@ -448,6 +448,26 @@ class Hotel_c extends BaseController{
       echo json_encode($output);
     }
 
+    public function renew_hotel_top_package(){      
+      $hotel_id = (int) $_REQUEST['hotel_id'];
+      $top_package_id = (int) $_REQUEST['top_package_id'];
+      $renew =  $this->Hotel_m->renew_hotel_top_package($hotel_id,$top_package_id);
+  
+      if($renew){
+        $output = array(
+          'success' => 'success'
+        );
+      }else{
+        $output = array(
+          'error' => true
+        );
+      }
+  
+      echo json_encode($output);
+      
+  }
+
+
     
 }
 ?>

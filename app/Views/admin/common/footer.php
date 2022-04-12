@@ -991,6 +991,31 @@
                     }
                 });               
             });
+
+            $(document).on('click','.renew-hotel-top-package',function(){
+                var hotel_id = $(this).attr('data-hotel-id');
+                var top_package_id = $(this).attr('data-package-id');
+
+                if(!confirm('Are you sure wants to renew top package?')) return false;
+
+                var data = {
+                    hotel_id,
+                    top_package_id
+                }
+
+                $.ajax({
+                    type :'POST',
+                    url : '<?php echo ADMIN_RENEW_HOTEL_TOP_PACKAGE_LINK ?>',
+                    data:data,
+                    success:function(res){
+                        var res = $.parseJSON(res);                       
+                        if (res.success == 'success') {
+                            alert("Top package renewed");
+                            location.reload();
+                        }
+                    }
+                });
+            });
         });
     </script>
 <?php } ?>

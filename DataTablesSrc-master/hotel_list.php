@@ -42,6 +42,8 @@ $columns = array(
     array('db' => 'sp.top_payment_id', 'dt' =>'top_payment_id'),   
     array('db' => 'sp.ads_package_payment_status', 'dt' =>'ads_package_payment_status'),   
     array('db' => 'sp.ads_payment_id', 'dt' =>'ads_payment_id'),   
+    array('db' => 'sp.top_package_expired', 'dt' =>'top_package_expired'),   
+    array('db' => 'sp.ads_package_expired', 'dt' =>'ads_package_expired'),   
     array('db' => 'sp.is_active', 'dt' =>'is_active')
     
    

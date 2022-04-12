@@ -301,5 +301,40 @@ class Hotel_m extends Model
         return $builder->update($params);     
     }
 
+    public function renew_hotel_top_package($hotel_id,$top_package_id){
+
+        if($hotel_id === 0 || $top_package_id === 0)
+            return false;
+
+        $package_details = self::top_package_details($top_package_id);
+        self::update_last_payments($hotel_id);
+
+        $package_data = array(
+            'module_type' => 'hotel',
+            'module_id' => $hotel_id,
+            'package_id' => $top_package_id,
+            'total_price' => $package_details['package_price'],
+            'last_payments' => 1
+        );
+
+        $paymentId = self::add_hotel_package_details($package_data);
+
+        if($paymentId){
+            self::add_hotel_payment_id($hotel_id,$paymentId);
+
+            $this->db->query(" UPDATE
+                                    saputara_hotel_modules
+                                SET
+                                top_package_expired = 0,
+                                top_package_payment_status = 0
+                                WHERE                                          
+                                hotel_id  = {$hotel_id}");
+
+        }  
+        
+        return true;
+
+    }
+
     
 }
