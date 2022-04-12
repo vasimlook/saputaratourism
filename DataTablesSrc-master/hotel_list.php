@@ -38,6 +38,10 @@ $columns = array(
     array('db' => 'sp.hotel_descriptions', 'dt' =>'hotel_descriptions'),   
     array('db' => 'sp.top_package_id', 'dt' =>'top_package_id'),   
     array('db' => 'sp.ads_package_id', 'dt' =>'ads_package_id'),   
+    array('db' => 'sp.top_package_payment_status', 'dt' =>'top_package_payment_status'),   
+    array('db' => 'sp.top_payment_id', 'dt' =>'top_payment_id'),   
+    array('db' => 'sp.ads_package_payment_status', 'dt' =>'ads_package_payment_status'),   
+    array('db' => 'sp.ads_payment_id', 'dt' =>'ads_payment_id'),   
     array('db' => 'sp.is_active', 'dt' =>'is_active')
     
    

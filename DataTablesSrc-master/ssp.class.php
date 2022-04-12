@@ -826,7 +826,21 @@ class SSP {
 					$top_package_name = $top_package_details['package_title'];
 				}			
 
-				$row['top_package_id'] = $top_package_name;
+				$ToppaymentAction = '';
+
+				if($top_package_id !== 0){
+					$top_pacakge_status = (int)$row['top_package_payment_status'];
+					$top_payment_id = (int)$row['top_payment_id'];
+
+					$ToppaymentAction = "<a href='#' data-payment-id=".$top_payment_id." class='btn btn-xs btn-primary make-top-package-payments'>Make Payments <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+
+				
+					if($top_pacakge_status == 1){
+						$ToppaymentAction = "<a href='#' class='btn btn-xs btn-success'>Completed</a> &nbsp;";
+					}
+				}				
+
+				$row['top_package_id'] = $top_package_name.' '.$ToppaymentAction;
 
 				$ads_package_id = (int)$row['ads_package_id'];
 
@@ -836,9 +850,24 @@ class SSP {
 				if(!empty($ads_package_details)){
 					$ads_package_details = current($ads_package_details);
 					$ads_package_name = $ads_package_details['package_title'];
-				}			
+				}	
 
-				$row['ads_package_id'] = $ads_package_name;
+				
+				$AdspaymentAction = '';
+
+				if($ads_package_id !== 0){
+					$ads_pacakge_status = (int)$row['ads_package_payment_status'];
+					$ads_payment_id = (int)$row['ads_payment_id'];
+
+					$AdspaymentAction = "<a href='#' data-payment-id=".$ads_payment_id." class='btn btn-xs btn-primary make-ads-package-payments'>Make Payments <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+
+				
+					if($ads_pacakge_status == 1){
+						$AdspaymentAction = "<a href='#' class='btn btn-xs btn-success'>Completed</a> &nbsp;";
+					}
+				}
+
+				$row['ads_package_id'] = $ads_package_name.' '.$AdspaymentAction;
 
 
 				
