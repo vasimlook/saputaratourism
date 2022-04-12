@@ -1077,6 +1077,119 @@ class SSP {
 			"data" => $resData
 		);
 	}
+
+	static function hotel_ads_pacakge_payment_list($request, $conn, $table, $primaryKey, $columns, $where_custom = '')
+	{
+		$bindings = array();
+		$db = self::db($conn);
+
+		$columns_order = $columns;
+		// Build the SQL query string from the request
+		if (($request['order'][0]['column']) > 0) {
+			$columnsArray = array();
+			foreach ($columns as $crow) {
+				if (substr_count($crow['db'], " as ")) {
+					$crow['db'] = explode(" as ", $crow['db'])[0];
+				}
+				array_push($columnsArray, $crow);
+			}
+			$columns_order = $columnsArray;
+		}
+
+		$limit = self::limit($request, $columns);
+		$order = self::order($request, $columns_order);
+
+		$where = self::filter($request, $columns, $bindings);
+		//                $where="";
+		if ($where_custom) {
+			if ($where) {
+				$where .= ' AND ' . $where_custom;
+			} else {
+				$where .= 'WHERE ' . $where_custom;
+			}
+		}
+
+		$data = self::sql_exec(
+			$db,
+			$bindings,
+			"SELECT " . implode(", ", self::pluck($columns, 'db')) . "
+			FROM $table                       
+			$where
+			$order 
+			$limit"
+		);
+		// Data set length after filtering
+		$resFilterLength = self::sql_exec(
+			$db,
+			$bindings,
+			"SELECT COUNT({$primaryKey})
+			FROM $table                       
+			$where "
+		);
+		$recordsFiltered = $resFilterLength[0][0];
+		// Total data set length
+		$resTotalLength = self::sql_exec(
+			$db,
+			"SELECT COUNT({$primaryKey})
+			FROM $table                       
+                        "
+		);
+		$recordsTotal = $resTotalLength[0][0];
+		$result = self::data_output($columns, $data);
+		$resData = array();
+		if (!empty($result)) {
+			foreach ($result as $row) {
+				$id = $row['payment_id'];
+
+				
+				$top_package_id= (int)$row['package_id'];
+
+				$hotel_id = (int)$row['module_id'];
+
+				$hotel_details = self::sql_exec($db, "SELECT * FROM saputara_hotel_modules WHERE hotel_id = {$hotel_id}");				
+				$hotel_name = "";
+
+				if(!empty($hotel_details)){
+					$hotel_details = current($hotel_details);
+					$hotel_name = $hotel_details['hotel_title'];
+				}	
+				
+				$row['module_id'] = $hotel_name;
+				
+				$package_details = self::sql_exec($db, "SELECT * FROM saputara_facility_packages WHERE package_id = {$top_package_id}");				
+				$package_name = "";
+
+				if(!empty($package_details)){
+					$package_details = current($package_details);
+					$package_name = $package_details['package_title'];
+				}	
+				
+				$row['module_id'] = $hotel_name;
+				$row['package_id'] = $package_name;				
+				
+				$row['index'] = '';
+
+				$paymentAction = "<a href='#' data-payment-id=".$id." class='btn btn-xs btn-primary make-ads-package-payments'>Make Payments <em class='icon ni ni-edit-fill'></em></a> &nbsp;";
+
+				if($row['payment_status'] == 1){
+					$paymentAction = "<a href='#' class='btn btn-xs btn-success'>Completed</a> &nbsp;";
+				}
+					
+
+				$row['action'] = $paymentAction;
+				array_push($resData, $row);
+			}
+		}
+		/*
+		 * Output
+		 */
+		return array(
+			"draw" => isset($request['draw']) ? intval($request['draw']) : 0,
+			"recordsTotal" => intval($recordsTotal),
+			"recordsFiltered" => intval($recordsFiltered),
+			"data" => $resData
+		);
+	}
          static function customers_view ($request, $conn, $table, $primaryKey, $columns,$where_custom = '')
          {                         
 		$bindings = array();

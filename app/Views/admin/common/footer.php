@@ -876,6 +876,91 @@
     </script>
 <?php } ?>
 
+<?php if ($title == VIEW_ADS_PACKAGE_PAYMENT) {
+?>
+    <script nonce='S51U26wMQz' type="text/javascript">
+        $(document).ready(function() {
+            fill_datatable7();
+
+            function fill_datatable7() {
+                $('#hotel_payment_details').DataTable({
+                    responsive: {
+                        details: {
+                            type: 'column',
+                            target: 'tr'
+                        }
+                    },
+
+                    columnDefs: [{
+                        className: 'control',
+                        orderable: false,
+                        targets: 0
+                    }],
+                    "processing": true,
+                    "serverSide": true,
+                    "pageLength": 10,
+                    "paginationType": "full_numbers",
+                    "lengthMenu": [
+                        [10, 25, 50, 100],
+                        [10, 25, 50, 100]
+                    ],
+                    "ajax": {
+                        'type': 'POST',
+                        'url': "<?php echo BASE_URL . '/DataTablesSrc-master/hotel_ads_package_payment_list.php' ?>",
+                    },
+                    "columns": [{
+                            "data": "index"
+                        },
+                        {
+                            "data": "payment_id"
+                        },
+                        {
+                            "data": "module_id"
+                        },
+                        {
+                            "data": "package_id"
+                        },
+                        {
+                            "data": "total_price"
+                        },
+                        {
+                            "data": "action"
+                        }
+                    ]
+                });
+            }  
+
+            
+            $(document).on('click','.make-ads-package-payments',function(){
+                var payments_id = $(this).attr('data-payment-id');
+                var this_ = $(this);
+
+                if(!confirm('Are you sure wants to make payments?')) return;
+
+                var data = {
+                    payments_id
+                }
+
+                $.ajax({
+                    type : 'POST',
+                    url : '<?php echo ADMIN_MAKE_ADS_PACKAGE_PAYMENT_LINK ?>',
+                    data : data,
+                    success : function(res){
+                        var res = $.parseJSON(res);                       
+                        if (res.success == 'success') {
+                            this_.toggleClass('btn btn-xs btn-success');
+                            this_.text('Completed');                            
+                            alert('Payments has been succesfully applied');
+                        }else{
+                            alert('Something went wrong while making a payments')
+                        }
+                    }
+                });               
+            });
+        });
+    </script>
+<?php } ?>
+
 </body>
 
 </html>

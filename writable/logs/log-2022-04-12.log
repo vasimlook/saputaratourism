@@ -16,3 +16,27 @@ CRITICAL - 2022-04-12 17:10:08 --> Call to a member function make_hotel_top_pack
 #2 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2022-04-12 17:27:41 --> Class 'App\Models\admin\AdsPackagePayment_m' not found
+#0 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(908): App\Controllers\AdsPackagePayment_c->__construct()
+#1 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-12 17:29:22 --> Class 'App\Models\admin\AdsPackagePayment_m' not found
+#0 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(908): App\Controllers\AdsPackagePayment_c->__construct()
+#1 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-12 17:29:46 --> Class 'App\Models\admin\AdsPackagePayment_m' not found
+#0 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(908): App\Controllers\AdsPackagePayment_c->__construct()
+#1 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-12 17:30:16 --> Class 'App\Models\admin\AdsPackagePayment_m' not found
+#0 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(908): App\Controllers\AdsPackagePayment_c->__construct()
+#1 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#4 {main}
