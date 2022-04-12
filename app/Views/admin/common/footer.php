@@ -900,35 +900,8 @@
                         }
                     ]
                 });
-            }  
-
-            
-            $(document).on('click','.make-ads-package-payments',function(){
-                var payments_id = $(this).attr('data-payment-id');
-                var this_ = $(this);
-
-                if(!confirm('Are you sure wants to make payments?')) return;
-
-                var data = {
-                    payments_id
-                }
-
-                $.ajax({
-                    type : 'POST',
-                    url : '<?php echo ADMIN_MAKE_ADS_PACKAGE_PAYMENT_LINK ?>',
-                    data : data,
-                    success : function(res){
-                        var res = $.parseJSON(res);                       
-                        if (res.success == 'success') {
-                            this_.toggleClass('btn btn-xs btn-success');
-                            this_.text('Completed');                            
-                            alert('Payments has been succesfully applied');
-                        }else{
-                            alert('Something went wrong while making a payments')
-                        }
-                    }
-                });               
-            });
+            }              
+           
         });
     </script>
 <?php } ?>
