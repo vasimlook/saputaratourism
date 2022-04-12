@@ -1,0 +1,18 @@
+CRITICAL - 2022-04-12 17:09:39 --> Use of undefined constant ADMIN_VIEW_ADS_PACKAGE_PAYMENT_LINK - assumed 'ADMIN_VIEW_ADS_PACKAGE_PAYMENT_LINK' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\saputaratourism\app\Views\admin\common\sidebar.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 137, Array)
+#1 C:\xampp\htdocs\saputaratourism\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\saputaratourism\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\saputaratourism\system\Common.php(1217): CodeIgniter\View\View->render('admin/common/si...', Array, true)
+#4 C:\xampp\htdocs\saputaratourism\system\Common.php(1259): view('admin/common/si...', Array)
+#5 C:\xampp\htdocs\saputaratourism\app\Controllers\TopPackagePayment_c.php(39): admin_view('admin/view_top_...', Array)
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\TopPackagePayment_c->view()
+#7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TopPackagePayment_c))
+#8 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-12 17:10:08 --> Call to a member function make_hotel_top_package_payments() on null
+#0 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\TopPackagePayment_c->make_top_package_payments()
+#1 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TopPackagePayment_c))
+#2 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#4 {main}

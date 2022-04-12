@@ -448,22 +448,6 @@ class Hotel_c extends BaseController{
       echo json_encode($output);
     }
 
-    public function make_hotel_top_package_payments(){
-      $payments_id = (int) $_REQUEST['payments_id'];      
-      $update =  $this->Hotel_m->make_hotel_top_package_payments($payments_id);
-  
-      if($update){
-        $output = array(
-          'success' => 'success'
-        );
-      }else{
-        $output = array(
-          'error' => true
-        );
-      }
-  
-      echo json_encode($output);
-      
-  }
+    
 }
 ?>

@@ -37,7 +37,25 @@ class TopPackagePayment_c extends BaseController{
     public function view(){    
         $data['title'] = VIEW_TOP_PACKAGE_PAYMENT; 
         echo admin_view('admin/view_top_package_payment',$data);
-    }   
+    }  
+    
+    public function make_top_package_payments(){
+        $payments_id = (int) $_REQUEST['payments_id'];      
+        $update =  $this->TopPackagePayment_m->make_top_package_payments($payments_id);
+    
+        if($update){
+          $output = array(
+            'success' => 'success'
+          );
+        }else{
+          $output = array(
+            'error' => true
+          );
+        }
+    
+        echo json_encode($output);
+        
+    }
   
 
     public function page404() {        

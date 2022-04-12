@@ -858,7 +858,7 @@
 
                 $.ajax({
                     type : 'POST',
-                    url : '<?php echo ADMIN_MAKE_TOP_PACKAGE_HOTEL_PAYMENT_LINK ?>',
+                    url : '<?php echo ADMIN_MAKE_TOP_PACKAGE_PAYMENT_LINK ?>',
                     data : data,
                     success : function(res){
                         var res = $.parseJSON(res);                       
