@@ -298,5 +298,54 @@ class Hotel_m extends Model
         return 0;
     }
 
+    public function ads_package_details($package_id){
+        $details = array();
+        $package_id = (int)$package_id;
+
+        if($package_id === 0)
+            return $details;
+         
+        $package = $this->db->query("SELECT *
+                                        FROM   saputara_ads_packages
+                                    WHERE package_id = {$package_id} ");
+        $package_details = $package->getRowArray();      
+
+        return $package_details;
+    }
+
+    public function update_ads_last_payments($hotelId){
+        $hotelId = (int)$hotelId;
+
+        if($hotelId === 0)
+            return false;
+        
+        $params['last_payments'] = 1;        
+        $builder = $this->db->table('saputara_ads_package_payment_history');
+        $builder->where('module_id', $hotelId);
+        $builder->where('module_type', 'hotel');
+        return $builder->update($params);     
+    }
+
+    public function add_hotel_ads_package_details($params) {               
+        $params['created_at'] = date("Y-m-d H:i:s");
+        $params['created_by'] = (int)$_SESSION['admin']['admin_user_id'];
+        $builder = $this->db->table('saputara_ads_package_payment_history');
+        $builder->insert($params);
+        return $this->db->insertID();
+    }
+
+    public function add_hotel_ads_payment_id($hotelId,$paymentId){
+        $hotelId = (int)$hotelId;
+        $paymentId = (int)$paymentId;
+
+        if($hotelId === 0 || $paymentId === 0)
+            return false;
+        
+        $params['ads_payment_id'] = $paymentId;        
+        $builder = $this->db->table('saputara_hotel_modules');
+        $builder->where('hotel_id', $hotelId);
+        return $builder->update($params);    
+    }
+
     
 }

@@ -75,8 +75,28 @@ class Hotel_c extends BaseController{
     
           if ($hotelId) {               
 
-            $top_package_id = isset($hotel_details['top_package_id']) ? (int)$hotel_details['top_package_id'] : 0;            
+            $top_package_id = isset($hotel_details['top_package_id']) ? (int)$hotel_details['top_package_id'] : 0;        
+            $ads_package_id = isset($hotel_details['ads_package_id']) ? (int)$hotel_details['ads_package_id'] : 0;        
 
+            if($ads_package_id !== 0){
+              $ads_package_details = $this->Hotel_m->ads_package_details($ads_package_id);
+              $this->Hotel_m->update_ads_last_payments($hotelId);
+
+              $package_data = array(
+                'module_type' => 'hotel',
+                'module_id' => $hotelId,
+                'package_id' => $ads_package_id,
+                'total_price' => $ads_package_details['package_price'],
+                'last_payments' => 1
+              );
+
+              $paymentId = $this->Hotel_m->add_hotel_ads_package_details($package_data);
+
+              if($paymentId){
+                $this->Hotel_m->add_hotel_ads_payment_id($hotelId,$paymentId);
+              }
+            }  
+            
             if($top_package_id !== 0){
               $package_details = $this->Hotel_m->top_package_details($top_package_id);
               $this->Hotel_m->update_last_payments($hotelId);
@@ -94,7 +114,7 @@ class Hotel_c extends BaseController{
               if($paymentId){
                 $this->Hotel_m->add_hotel_payment_id($hotelId,$paymentId);
               }
-            }          
+            }
             
             if (($_FILES['other_hotel_images']['name'][0]) != '') {
               $other_hotel_images = multiImageUpload('other_hotel_images');
