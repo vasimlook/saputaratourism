@@ -58,3 +58,13 @@ Stack trace:
 #7 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2022-04-13 18:51:21 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\saputaratourism\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\saputaratourism\system\Common.php(1217): CodeIgniter\View\View->render('hotel_details', Array, true)
+#2 C:\xampp\htdocs\saputaratourism\system\Common.php(1282): view('hotel_details', Array)
+#3 C:\xampp\htdocs\saputaratourism\app\Controllers\Home_c.php(37): front_view('hotel_details', Array)
+#4 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(936): App\Controllers\Home_c->hotel_details(16)
+#5 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home_c))
+#6 C:\xampp\htdocs\saputaratourism\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\saputaratourism\index.php(65): CodeIgniter\CodeIgniter->run()
+#8 {main}

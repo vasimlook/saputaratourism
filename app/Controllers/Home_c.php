@@ -30,7 +30,9 @@ class Home_c extends BaseController
     public function hotel_details($hotel_id) {
         $hotel_id = (int)$hotel_id;
         $hotel_details = $this->Home_m->get_hotel_details($hotel_id);
+        $amenities = $this->Home_m->get_hotel_amenities($hotel_id);
         $data['hotel_details'] = $hotel_details;
+        $data['amenities'] = $amenities;
         $data['title'] = HOTEL_DETAILS;        
         echo front_view('hotel_details',$data);
     }

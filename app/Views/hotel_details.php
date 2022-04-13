@@ -1,10 +1,29 @@
 <?php
 	$hotel_title = '';
 	$hotel_descriptions = '';
+	$hotel_amenities_html = '';
 
 	if(isset($hotel_details) && !empty($hotel_details)){
 		$hotel_title = $hotel_details['hotel_title'];
 		$hotel_descriptions = $hotel_details['hotel_descriptions'];
+
+
+		if(isset($amenities) && is_array($amenities) && sizeof($amenities) > 0){
+			$amenities_list = '';
+			foreach($amenities as $key => $am){
+				$title = $am['facility_title'];	
+				$amenities_list .= '<li>'.$title.'</li>';			
+			}
+
+			$hotel_amenities_html .= '<div class="row add_bottom_30">
+											<div class="col-lg-6">
+												<ul class="bullets">
+												'.$amenities_list.'	
+												</ul>
+											</div>				
+										</div>';
+		}
+
 	}
 ?>
 
@@ -30,24 +49,7 @@
 							</div>
 							<?= $hotel_descriptions ?>
 							<h5 class="add_bottom_15">Amenities</h5>
-							<div class="row add_bottom_30">
-								<div class="col-lg-6">
-									<ul class="bullets">
-										<li>Dolorem mediocritatem</li>
-										<li>Mea appareat</li>
-										<li>Prima causae</li>
-										<li>Singulis indoctum</li>
-									</ul>
-								</div>
-								<div class="col-lg-6">
-									<ul class="bullets">
-										<li>Timeam inimicus</li>
-										<li>Oportere democritum</li>
-										<li>Cetero inermis</li>
-										<li>Pertinacia eum</li>
-									</ul>
-								</div>
-							</div>
+							<?= $hotel_amenities_html ?>							
 							<!-- /row -->						
 							<hr>
 							<div class="room_type first">

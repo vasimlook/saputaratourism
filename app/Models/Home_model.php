@@ -42,6 +42,20 @@ class Home_model extends Model {
         return $hotel_details;
     }
 
+    public function get_hotel_amenities($hotel_id){
+
+        $amenities = $this->db->query("SELECT chf.*,hf.*
+                                       FROM
+                                          saputara_client_hotel_facilities chf
+                                       LEFT JOIN
+                                         saputara_hotel_facilities hf
+                                          ON hf.facility_id = chf.hotel_facility_id
+                                        WHERE chf.hotel_id = {$hotel_id} ");
+        $hotel_amenities = $amenities->getResultArray();      
+        return $hotel_amenities;
+        
+    }
+
     public function get_category_details($categoryId){
         $category = $this->db->query("SELECT *
                                     FROM   saputara_facility_categories
