@@ -6,7 +6,7 @@
 		foreach($categories as $key => $category){
 			$title = $category['category_title'];
 			$id = $category['category_id'];
-			$link = LISTING_LINK.$id;
+			$link = LISTING_LINK;
 			$image = FRONT_ASSETS_FOLDER.'img/home_cat_1.jpg';
 
 			$categories_html .= '<div class="col-lg-4 col-sm-6">

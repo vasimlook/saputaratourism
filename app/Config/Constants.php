@@ -81,13 +81,13 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 
 //**************************************FRONT-END LINK****************************//
 define('HOME_LINK', BASE_URL.'/home');
-define('LISTING_LINK', BASE_URL.'/listing/');
+define('LISTING_LINK', BASE_URL.'/hotel-listing/');
 define('DETAILS_LINK', BASE_URL.'/details/');
 
 
 //**************************************FRONT-END ADMIN TITLE****************************//
 define('HOME_TITLE', 'HOME');
-define('LISTING', 'LISTING');
+define('HOTEL_LISTING', 'Hotel Listing');
 define('DETAILS', 'DETAILS');
 
 // START ADMIN TITLES

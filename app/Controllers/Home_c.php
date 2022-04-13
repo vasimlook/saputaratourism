@@ -20,15 +20,11 @@ class Home_c extends BaseController
         echo front_view('home',$data);
     }
   
-    public function listing($cat_id) {
-        
-        $cat_id = (int)$cat_id;
-        $categoryDetails = array();
-        $categoryDetails = $this->Home_m->get_category_details($cat_id);
-        $categoryDetails['facilities'] = $this->Home_m->get_facilities($cat_id);
-        $data['categoryDetails'] = $categoryDetails;
-        $data['title'] = LISTING;        
-        echo front_view('listing',$data);
+    public function hotel_listing() {                     
+        $hotels = $this->Home_m->get_hotels();        
+        $data['hotels'] = $hotels;
+        $data['title'] = HOTEL_LISTING;        
+        echo front_view('hotel_listing',$data);
     }
 
     public function details($id) {

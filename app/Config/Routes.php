@@ -38,7 +38,7 @@ $routes->add('errorpage', 'Home_c::page404');
 //************************************FRONT-END side route****************************//
 
 $routes->add('home', 'Home_c::index');
-$routes->add('listing/(:num)', 'Home_c::listing/$1');
+$routes->add('hotel-listing', 'Home_c::hotel_listing');
 $routes->add('details/(:num)', 'Home_c::details/$1');
 
 

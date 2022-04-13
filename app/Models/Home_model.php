@@ -25,6 +25,14 @@ class Home_model extends Model {
         
     }
 
+    public function get_hotels(){
+        $hotel = $this->db->query("SELECT *
+                                    FROM   saputara_hotel_modules
+                                    WHERE is_active = 1 ");
+        $hotels = $hotel->getResultArray();      
+        return $hotels;
+    }
+
     public function get_category_details($categoryId){
         $category = $this->db->query("SELECT *
                                     FROM   saputara_facility_categories
