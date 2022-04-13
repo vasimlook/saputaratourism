@@ -49,12 +49,12 @@
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
                                         <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
-                                        <span class="nk-menu-text">Packages</span>
+                                        <span class="nk-menu-text">Top Packages</span>
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="<?php echo ADMIN_ADD_PACKAGES_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">Add Packages</span></a>
-                                            <a href="<?php echo ADMIN_VIEW_PACKAGES_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">View Packages</span></a>
+                                            <a href="<?php echo ADMIN_ADD_PACKAGES_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">Add Top Packages</span></a>
+                                            <a href="<?php echo ADMIN_VIEW_PACKAGES_LINK ?>" class="nk-menu-link"><span class="nk-menu-text">View Top Packages</span></a>
                                         </li>                                       
                                     </ul>                                     
                                 </li> 
