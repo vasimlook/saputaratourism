@@ -13,13 +13,9 @@ class Home_c extends BaseController
         $this->Home_m = new Home_model();
         $this->security = \Config\Services::security();                        
     }
-    public function index() {    
-        $slider = $this->Home_m->get_home_slider();
-        $categories = $this->Home_m->get_categories();     
-        $saputara_about = $this->Home_m->get_saputara_about();      
-        $data['categories'] = $categories;
-        $data['slider'] = $slider;
-        $data['saputara_about'] = $saputara_about;
+    public function index() {
+        $categories = $this->Home_m->get_categories();                 
+        $data['categories'] = $categories;        
         $data['title'] = HOME_TITLE;        
         echo front_view('home',$data);
     }
