@@ -7,7 +7,7 @@
 				</div>
 				<div class="row">
 				<div class="col-lg-4 col-sm-6">
-					<a href="grid-listings-filterstop.html" class="grid_item">
+					<a href="<?= LISTING_LINK ?>/0" class="grid_item">
 						<figure>
 							<img src="<?php echo FRONT_ASSETS_FOLDER; ?>img/home_cat_1.jpg" alt="">
 							<div class="info">
@@ -19,7 +19,7 @@
 				</div>
 				<!-- /grid_item -->
 				<div class="col-lg-4 col-sm-6">
-					<a href="grid-listings-filterstop.html" class="grid_item">
+					<a href="<?= LISTING_LINK ?>/0" class="grid_item">
 						<figure>
 							<img src="<?php echo FRONT_ASSETS_FOLDER; ?>img/home_cat_2.jpg" alt="">
 							<div class="info">
@@ -31,7 +31,7 @@
 				</div>
 				<!-- /grid_item -->
 				<div class="col-lg-4 col-sm-6">
-					<a href="grid-listings-filterstop.html" class="grid_item">
+					<a href="<?= LISTING_LINK ?>/0" class="grid_item">
 						<figure>
 							<img src="<?php echo FRONT_ASSETS_FOLDER; ?>img/home_cat_3.jpg" alt="">
 							<div class="info">
@@ -43,7 +43,7 @@
 				</div>
 				<!-- /grid_item -->
 				<div class="col-lg-4 col-sm-6">
-					<a href="grid-listings-filterstop.html" class="grid_item">
+					<a href="<?= LISTING_LINK ?>/0" class="grid_item">
 						<figure>
 							<img src="<?php echo FRONT_ASSETS_FOLDER; ?>img/home_cat_4.jpg" alt="">
 							<div class="info">
@@ -55,7 +55,7 @@
 				</div>
 				<!-- /grid_item -->
 				<div class="col-lg-4 col-sm-6">
-					<a href="grid-listings-filterstop.html" class="grid_item">
+					<a href="<?= LISTING_LINK ?>/0" class="grid_item">
 						<figure>
 							<img src="<?php echo FRONT_ASSETS_FOLDER; ?>img/home_cat_5.jpg" alt="">
 							<div class="info">
@@ -67,7 +67,7 @@
 				</div>
 				<!-- /grid_item -->
 				<div class="col-lg-4 col-sm-6">
-					<a href="grid-listings-filterstop.html" class="grid_item">
+					<a href="<?= LISTING_LINK ?>/0" class="grid_item">
 						<figure>
 							<img src="<?php echo FRONT_ASSETS_FOLDER; ?>img/home_cat_6.jpg" alt="">
 							<div class="info">
