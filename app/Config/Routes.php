@@ -39,7 +39,7 @@ $routes->add('errorpage', 'Home_c::page404');
 
 $routes->add('home', 'Home_c::index');
 $routes->add('hotel-listing', 'Home_c::hotel_listing');
-$routes->add('details/(:num)', 'Home_c::details/$1');
+$routes->add('hotel-details/(:num)', 'Home_c::hotel_details/$1');
 
 
 // START ADMIN ROUTES
